@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://energiasolarma.com.br/energia-solar-cascavel.html</loc>
+    <image:image>
+      <image:loc>https://energiasolarma.com.br/img/depoimentos/cascavel/cliente-residencial-cascavel-01.webp</image:loc>
+      <image:title>Roberto Andrade - Sistema Residencial Cascavel</image:title>
+      <image:caption>Cliente M&A Soluções Energéticas</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://energiasolarma.com.br/energia-solar-toledo.html</loc>
+    <image:image>
+      <image:loc>https://energiasolarma.com.br/img/depoimentos/toledo/cliente-comercial-toledo-01.webp</image:loc>
+      <image:title>Cláudia Bernardi - Sistema Comercial Toledo</image:title>
+      <image:caption>Cliente M&A Soluções Energéticas</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://energiasolarma.com.br/energia-solar-marechal-candido-rondon.html</loc>
+    <image:image>
+      <image:loc>https://energiasolarma.com.br/img/depoimentos/marechal-candido-rondon/cliente-rural-mcrondon-01.webp</image:loc>
+      <image:title>Jair Kohler - Sistema Rural</image:title>
+      <image:caption>Cliente M&A Soluções Energéticas</image:caption>
+    </image:image>
+  </url>
+</urlset>
