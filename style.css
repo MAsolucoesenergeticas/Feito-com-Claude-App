@@ -33,25 +33,17 @@
   --wa3:       #0E6E5F;
   --font:      'Inter','Segoe UI',Helvetica,Arial,sans-serif;
 
-  /* Z-INDEX STACK
-     199 -> .wa-bar      (barra mobile fixa)
-     198 -> #magnum      (widget de chat)
-     126 -> .menu        (menu mobile)
-     125 -> .overlay
-     120 -> header       (sticky) */
   --z-header:  120;
   --z-overlay: 125;
   --z-menu:    126;
   --z-chat:    198;
   --z-wa-bar:  199;
 
-  /* AVATARES */
   --avatar-lg: 64px;
   --avatar-md: 46px;
   --avatar-sm: 40px;
   --avatar-xs: 36px;
 
-  /* CHAT INTERNO */
   --chat-subtitle: #C4F0E4;
   --chat-bg:       #F7FAFC;
   --chat-online:   #D6FFE6;
@@ -189,7 +181,7 @@ header {
 .hero           { position: relative; min-height: 600px; display: flex; align-items: flex-end; color: #fff; }
 .hero-bg        { position: absolute; inset: 0; }
 .hero-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg,rgba(8,32,58,.94),rgba(8,32,58,.72) 55%,rgba(8,32,58,.28)); }
-.hero-inner     { position: relative; z-index: 2; padding: 120px 0 90px; max-width: 800px; }
+.hero-inner     { position: relative; z-index: 2; padding: 120px 24px 90px; max-width: 800px; margin: 0 auto; }
 .hero .eyebrow  { color: var(--primary); }
 .hero h1        { font-size: clamp(32px,5vw,56px); color: #fff; margin: 18px 0 22px; }
 .hero h1 span   { color: var(--primary); }
@@ -333,8 +325,12 @@ footer.site a:hover { color: var(--primary); }
   font-size: 11px; font-weight: 700; line-height: 19px; text-align: center; display: none;
 }
 .magnum[data-alert="1"] .magnum-badge { display: block; }
-.magnum-avatar    { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--primary); color: var(--dark); flex: 0 0 auto; }
-.magnum-avatar-lg { width: 44px; height: 44px; }
+
+/* Avatar do widget Magnum — agora com foto real (img/atendente-magnum.jpg) */
+.magnum-avatar    { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--primary); color: var(--dark); flex: 0 0 auto; overflow: hidden; }
+.magnum-avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block; }
+.magnum-avatar-lg { width: 56px; height: 56px; }
+
 .magnum-dot {
   width: 8px; height: 8px; border-radius: 50%; background: #25D366;
   box-shadow: 0 0 0 0 rgba(37,211,102,.7); animation: magnumPulse 2s infinite;
