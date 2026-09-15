@@ -33,17 +33,25 @@
   --wa3:       #0E6E5F;
   --font:      'Inter','Segoe UI',Helvetica,Arial,sans-serif;
 
+  /* Z-INDEX STACK
+     199 -> .wa-bar      (barra mobile fixa)
+     198 -> #magnum      (widget de chat)
+     126 -> .menu        (menu mobile)
+     125 -> .overlay
+     120 -> header       (sticky) */
   --z-header:  120;
   --z-overlay: 125;
   --z-menu:    126;
   --z-chat:    198;
   --z-wa-bar:  199;
 
+  /* AVATARES */
   --avatar-lg: 64px;
   --avatar-md: 46px;
   --avatar-sm: 40px;
   --avatar-xs: 36px;
 
+  /* CHAT INTERNO */
   --chat-subtitle: #C4F0E4;
   --chat-bg:       #F7FAFC;
   --chat-online:   #D6FFE6;
@@ -178,16 +186,17 @@ header {
 .burger.is-x span:nth-child(3)        { transform: translateY(-7.5px) rotate(-45deg); }
 
 /* ---------- 5. HERO E ESTATISTICAS ---------- */
-.hero           { position: relative; min-height: 600px; display: flex; align-items: flex-end; color: #fff; }
+.hero           { position: relative; min-height: 200px; display: flex; align-items: flex-end; color: #fff; }
 .hero-bg        { position: absolute; inset: 0; }
 .hero-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg,rgba(8,32,58,.94),rgba(8,32,58,.72) 55%,rgba(8,32,58,.28)); }
-.hero-inner     { position: relative; z-index: 2; padding: 120px 24px 90px; max-width: 800px; margin: 0 auto; }
+.hero-bg img    { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+.hero-inner     { position: relative; z-index: 2; padding: 24px 0 22px; max-width: 800px; }
 .hero .eyebrow  { color: var(--primary); }
-.hero h1        { font-size: clamp(32px,5vw,56px); color: #fff; margin: 18px 0 22px; }
+.hero h1        { font-size: clamp(30px,4.4vw,46px); color: #fff; margin: 10px 0 12px; }
 .hero h1 span   { color: var(--primary); }
 .hero p         { font-size: 18.5px; color: #D7E3F2; max-width: 640px; }
 .hero .wa-hint  { color: #A8BFD8; }
-.hero-actions   { margin-top: 34px; display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+.hero-actions   { margin-top: 14px; display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
 
 .stats              { padding: 0; border-bottom: 1px solid var(--line); }
 .stats-grid         { display: grid; grid-template-columns: repeat(4,1fr); }
@@ -325,12 +334,9 @@ footer.site a:hover { color: var(--primary); }
   font-size: 11px; font-weight: 700; line-height: 19px; text-align: center; display: none;
 }
 .magnum[data-alert="1"] .magnum-badge { display: block; }
-
-/* Avatar do widget Magnum — agora com foto real (img/atendente-magnum.jpg) */
 .magnum-avatar    { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--primary); color: var(--dark); flex: 0 0 auto; overflow: hidden; }
 .magnum-avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block; }
 .magnum-avatar-lg { width: 56px; height: 56px; }
-
 .magnum-dot {
   width: 8px; height: 8px; border-radius: 50%; background: #25D366;
   box-shadow: 0 0 0 0 rgba(37,211,102,.7); animation: magnumPulse 2s infinite;
@@ -401,7 +407,7 @@ footer.site a:hover { color: var(--primary); }
   .stat          { border-left: 0; border-top: 1px solid var(--line); }
   .f-grid        { grid-template-columns: 1fr; }
   .map-frame     { height: 300px; }
-  .hero          { min-height: 520px; }
+  .hero          { min-height: 160px; }
   .hero-actions  { flex-direction: column; align-items: stretch; }
   .hero-actions .btn { text-align: center; }
   .btn-wa        { width: 100%; padding: 16px 22px; font-size: 15px; }
