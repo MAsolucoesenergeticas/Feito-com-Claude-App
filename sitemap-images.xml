@@ -6,7 +6,7 @@
     <image:image>
       <image:loc>https://energiasolarma.com.br/img/depoimentos/cascavel/cliente-residencial-cascavel-01.webp</image:loc>
       <image:title>Roberto Andrade - Sistema Residencial Cascavel</image:title>
-      <image:caption>Cliente M&A Soluções Energéticas</image:caption>
+      <image:caption>Cliente M&amp;A Soluções Energéticas</image:caption>
     </image:image>
   </url>
   <url>
@@ -14,7 +14,7 @@
     <image:image>
       <image:loc>https://energiasolarma.com.br/img/depoimentos/toledo/cliente-comercial-toledo-01.webp</image:loc>
       <image:title>Cláudia Bernardi - Sistema Comercial Toledo</image:title>
-      <image:caption>Cliente M&A Soluções Energéticas</image:caption>
+      <image:caption>Cliente M&amp;A Soluções Energéticas</image:caption>
     </image:image>
   </url>
   <url>
@@ -22,7 +22,7 @@
     <image:image>
       <image:loc>https://energiasolarma.com.br/img/depoimentos/marechal-candido-rondon/cliente-rural-mcrondon-01.webp</image:loc>
       <image:title>Jair Kohler - Sistema Rural</image:title>
-      <image:caption>Cliente M&A Soluções Energéticas</image:caption>
+      <image:caption>Cliente M&amp;A Soluções Energéticas</image:caption>
     </image:image>
   </url>
 </urlset>
