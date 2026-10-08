@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://energiasolarma.com.br/sitemap.xml
 
-Sitemap: https://energiasolarma.com.br/sitemap-images.xml
+Sitemap: https://energiasolarma.com.br/sitemap.xml
