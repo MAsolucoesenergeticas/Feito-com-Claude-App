@@ -1,12 +1,15 @@
 # M&A Soluções Energéticas
 
-> Empresa de energia solar fotovoltaica com sede em Cascavel, Paraná. Faz o projeto, a instalação e a homologação de sistemas solares para residências, comércios, indústrias e propriedades rurais no Oeste do Paraná.
+> Empresa de energia solar fotovoltaica do Oeste do Paraná. Faz o projeto, a instalação e a homologação de sistemas solares para residências, comércios, indústrias e propriedades rurais.
 
 ## Empresa
 
 - Nome: M&A Soluções Energéticas
 - Site: https://energiasolarma.com.br/
-- Sede: Cascavel, Paraná, Brasil
+- Sede: Av. Brasil, 4212, Independência, Medianeira, Paraná, CEP 85884-000, Brasil
+- Loja em Santa Catarina: Rua Lauro Müller, 41, Centro, Guaraciaba, Santa Catarina, CEP 89920-000, Brasil
+- CNPJ: 35.022.477/0001-52
+- Atividade principal (CNAE): 4321-5/00, instalação e manutenção elétrica
 - Telefone e WhatsApp: +55 45 99126-2160
 - Horário: segunda a sexta, 8h às 18h; sábado, 8h às 12h
 - Idioma do site: português do Brasil
@@ -38,6 +41,7 @@
 - [Nova Santa Rosa](https://energiasolarma.com.br/energia-solar-nova-santa-rosa.html)
 - [Entre Rios do Oeste](https://energiasolarma.com.br/energia-solar-entre-rios-do-oeste.html)
 - [Braganey](https://energiasolarma.com.br/energia-solar-braganey.html)
+- [Guaraciaba, Santa Catarina](https://energiasolarma.com.br/guaraciaba/)
 
 ## Páginas principais
 
