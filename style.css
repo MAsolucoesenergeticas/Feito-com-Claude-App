@@ -520,7 +520,7 @@ body > .menu { position: fixed !important; top: 0 !important; bottom: 0 !importa
 
 /* ---------- 17. PERFORMANCE ---------- */
 #cenarios, #comparativo, #equipamentos, #etapas,
-#depoimentos, #faq, #atendimento, .interlinking {
+#depoimentos, #clientes, #faq, #atendimento, .interlinking {
   content-visibility: auto;
   contain-intrinsic-size: auto 700px;
 }
