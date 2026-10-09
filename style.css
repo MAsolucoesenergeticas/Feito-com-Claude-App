@@ -598,3 +598,21 @@ body > .menu { position: fixed !important; top: 0 !important; bottom: 0 !importa
 .depo-center { text-align: center; }
 .depo-right { text-align: right; }
 .depo-full { width: 100%; }
+
+/* ---------- CLIENTES ATENDIDOS ---------- */
+.clientes            { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+.clientes-track      { display: flex; width: max-content; animation: clientes-slide 70s linear infinite; }
+.clientes:hover .clientes-track, .clientes:active .clientes-track { animation-play-state: paused; }
+/* margem em vez de gap: a faixa tem 2 cópias e precisa medir exatamente o dobro de uma para o laço não dar salto */
+.cliente             { flex: 0 0 260px; margin: 0 20px 0 0; background: #fff; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.cliente img         { width: 100%; height: auto; aspect-ratio: 4/5; object-fit: cover; display: block; background: #f4f6f8; }
+.cliente figcaption  { padding: 16px 18px 18px; }
+.cliente strong      { display: block; color: var(--dark); font-size: 15px; }
+.cliente small       { display: block; color: var(--muted); font-size: 13px; margin-top: 2px; }
+@keyframes clientes-slide { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (max-width: 720px) { .cliente { flex-basis: min(64vw, 240px); margin-right: 14px; } }
+@media (prefers-reduced-motion: reduce) {
+  .clientes        { overflow-x: auto; -webkit-mask-image: none; mask-image: none; }
+  .clientes-track  { animation: none; }
+  .cliente[aria-hidden="true"] { display: none; }
+}
