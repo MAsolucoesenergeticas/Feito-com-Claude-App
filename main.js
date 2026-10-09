@@ -157,6 +157,16 @@
     return 'https://wa.me/' + CONFIG.telefone + '?text=' + encodeURIComponent(texto);
   }
 
+  function registrarLead(origem) {
+    if (typeof window.gtag !== 'function') return;
+    window.gtag('event', 'generate_lead', {
+      lead_source: 'whatsapp',
+      botao:       origem || '(sem origem)',
+      cidade:      CTX.cidade || '(sem cidade)',
+      intencao:    CTX.id
+    });
+  }
+
   /* ======================================================================
      3. BOTOES WHATSAPP
      ====================================================================== */
@@ -166,6 +176,7 @@
       btn.setAttribute('href', montarLinkWa(origem));
       btn.setAttribute('target', '_blank');
       btn.setAttribute('rel', 'noopener noreferrer');
+      btn.addEventListener('click', function () { registrarLead(origem); });
       if (!btn.querySelector('.ico-wa')) {
         btn.insertAdjacentHTML('afterbegin', CONFIG.iconeWa);
       }
@@ -463,6 +474,7 @@
         b.setAttribute('data-wa-ctx', 'magnum-' + ctx + ': ' + txt);
         b.addEventListener('click', function () {
           var base = CONFIG.mensagemBase + ' (' + txt + ')';
+          registrarLead('magnum-' + ctx + ': ' + txt);
           window.open('https://wa.me/' + CONFIG.telefone + '?text=' + encodeURIComponent(base), '_blank', 'noopener,noreferrer');
         });
         quick.appendChild(b);
