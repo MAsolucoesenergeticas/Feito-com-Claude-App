@@ -616,3 +616,10 @@ body > .menu { position: fixed !important; top: 0 !important; bottom: 0 !importa
   .clientes-track  { animation: none; }
   .cliente[aria-hidden="true"] { display: none; }
 }
+
+/* Cartões de equipamentos (módulos e inversores) */
+.eq-grid            { display: grid; grid-template-columns: repeat(auto-fill,minmax(150px,1fr)); gap: 16px; margin: 22px 0; }
+.eq-card            { margin: 0; border: 1px solid var(--line); border-radius: 6px; background: #fff; overflow: hidden; }
+.eq-card img        { display: block; width: 100%; height: auto; aspect-ratio: 1/1; object-fit: contain; }
+.eq-card figcaption { padding: 10px 12px; border-top: 1px solid var(--line); font-size: 14px; font-weight: 600; line-height: 1.35; }
+.eq-card figcaption span { display: block; font-weight: 400; color: #5B6B7D; font-size: 13px; }
