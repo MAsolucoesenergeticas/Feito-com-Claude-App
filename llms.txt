@@ -10,6 +10,7 @@
 - Loja em Santa Catarina: Rua Lauro Müller, 41, Centro, Guaraciaba, Santa Catarina, CEP 89920-000, Brasil
 - CNPJ: 35.022.477/0001-52
 - Atividade principal (CNAE): 4321-5/00, instalação e manutenção elétrica
+- Responsável técnico: Luiz Carlos da Cruz, Engenheiro Eletricista, CREA-PR 165161/D, RNP 1716926360
 - Telefone e WhatsApp: +55 45 99126-2160
 - Horário: segunda a sexta, 8h às 18h; sábado, 8h às 12h
 - Idioma do site: português do Brasil
@@ -46,6 +47,9 @@
 ## Páginas principais
 
 - [Página inicial](https://energiasolarma.com.br/)
+- [Sobre a empresa](https://energiasolarma.com.br/sobre.html)
+- [Contato](https://energiasolarma.com.br/contato.html)
+- [Política de Privacidade](https://energiasolarma.com.br/politica-de-privacidade.html)
 - [Instalação de energia solar em Cascavel](https://energiasolarma.com.br/instalacao-de-energia-solar-cascavel.html)
 - [Energia solar para empresas em Cascavel](https://energiasolarma.com.br/energia-solar-para-empresas-cascavel.html)
 - [Energia solar para agronegócio em Cascavel](https://energiasolarma.com.br/energia-solar-para-agronegocio-cascavel.html)
