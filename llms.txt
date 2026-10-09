@@ -6,7 +6,7 @@
 
 - Nome: M&A Soluções Energéticas
 - Site: https://energiasolarma.com.br/
-- Sede: Av. Brasil, 4212, Independência, Medianeira, Paraná, CEP 85884-000, Brasil
+- Sede: Av. Brasil, 3030, Itaipu, Medianeira, Paraná, CEP 85884-000, Brasil
 - Loja em Santa Catarina: Rua Lauro Müller, 41, Centro, Guaraciaba, Santa Catarina, CEP 89920-000, Brasil
 - CNPJ: 35.022.477/0001-52
 - Atividade principal (CNAE): 4321-5/00, instalação e manutenção elétrica
