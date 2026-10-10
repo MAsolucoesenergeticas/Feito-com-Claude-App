@@ -422,7 +422,7 @@ footer.site a:hover { color: var(--primary); }
   .magnum-panel  { width: 100%; }
 }
 @media (max-width: 400px) {
-  .nav           { gap: 9px; padding: 14px 16px; }
+  .nav           { gap: 9px; padding: 14px 24px; }
   .logo          { font-size: 18px; }
   .logo em       { font-size: 9.5px; }
   .burger        { width: 40px; height: 40px; flex-basis: 40px; }
@@ -623,3 +623,8 @@ body > .menu { position: fixed !important; top: 0 !important; bottom: 0 !importa
 .eq-card img        { display: block; width: 100%; height: auto; aspect-ratio: 1/1; object-fit: contain; }
 .eq-card figcaption { padding: 10px 12px; border-top: 1px solid var(--line); font-size: 14px; font-weight: 600; line-height: 1.35; }
 .eq-card figcaption span { display: block; font-weight: 400; color: #5B6B7D; font-size: 13px; }
+
+/* Topo da página: mesma margem lateral do restante do conteúdo em telas estreitas */
+@media (max-width: 880px) {
+  .hero-inner    { padding-left: 24px; padding-right: 24px; }
+}
