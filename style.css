@@ -628,3 +628,7 @@ body > .menu { position: fixed !important; top: 0 !important; bottom: 0 !importa
 @media (max-width: 880px) {
   .hero-inner    { padding-left: 24px; padding-right: 24px; }
 }
+
+/* Selo de economia no topo da página */
+.hero .hero-eco        { display: inline-block; max-width: 100%; margin: 2px 0 14px; padding: 7px 14px; border: 1px solid rgba(255,255,255,.3); border-radius: 20px; background: rgba(255,255,255,.08); font-size: 15px; font-weight: 600; color: #fff; }
+.hero .hero-eco strong { color: var(--primary); }
