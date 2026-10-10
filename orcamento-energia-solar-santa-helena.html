@@ -466,21 +466,52 @@
 
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Service",
-  "serviceType":"Orçamento de energia solar",
-  "provider":{
-    "@type":"LocalBusiness",
-    "name":"M&A Soluções Energéticas",
-    "telephone":"+5545991262160",
-    "address":{"@type":"PostalAddress","streetAddress":"Av. Brasil, 3030 - Itaipu","addressLocality":"Medianeira","addressRegion":"PR","postalCode":"85884-000","addressCountry":"BR"},
-  "geo":{"@type":"GeoCoordinates","latitude":-25.2970529,"longitude":-54.102987},
-  "sameAs":["https://www.instagram.com/m.a.energias/", "https://www.google.com/maps?cid=17272189157894370368"]
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Orçamento de energia solar",
+  "provider": {
+    "@type": "ElectricalContractor",
+    "@id": "https://energiasolarma.com.br/#organization",
+    "name": "M&A Soluções Energéticas",
+    "telephone": "+5545991262160",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Brasil, 3030 - Itaipu",
+      "addressLocality": "Medianeira",
+      "addressRegion": "PR",
+      "postalCode": "85884-000",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -25.2970529,
+      "longitude": -54.102987
+    },
+    "sameAs": [
+      "https://www.instagram.com/m.a.energias/",
+      "https://www.google.com/maps?cid=17272189157894370368"
+    ],
+    "logo": "https://energiasolarma.com.br/apple-touch-icon.png",
+    "image": "https://energiasolarma.com.br/assets/img/og-home.jpg"
   },
-  "areaServed":["Santa Helena","Entre Rios do Oeste","Pato Bragado","Marechal Cândido Rondon","Nova Santa Rosa","Missal","Toledo","Palotina"],
-  "description":"Orçamento gratuito de energia solar em Santa Helena, Paraná, com dimensionamento, investimento e payback sem compromisso.",
-  "offers":{"@type":"Offer","price":"0","priceCurrency":"BRL","description":"Orçamento gratuito e sem compromisso"},
-  "url":"https://energiasolarma.com.br/orcamento-energia-solar-santa-helena.html"
+  "areaServed": [
+    "Santa Helena",
+    "Entre Rios do Oeste",
+    "Pato Bragado",
+    "Marechal Cândido Rondon",
+    "Nova Santa Rosa",
+    "Missal",
+    "Toledo",
+    "Palotina"
+  ],
+  "description": "Orçamento gratuito de energia solar em Santa Helena, Paraná, com dimensionamento, investimento e payback sem compromisso.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "BRL",
+    "description": "Orçamento gratuito e sem compromisso"
+  },
+  "url": "https://energiasolarma.com.br/orcamento-energia-solar-santa-helena.html"
 }
 </script>
 <script type="application/ld+json">
@@ -498,5 +529,31 @@
 </script>
 
 <script src="main.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://energiasolarma.com.br/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Energia Solar em Santa Helena - PR",
+      "item": "https://energiasolarma.com.br/energia-solar-santa-helena.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Orçamento de Energia Solar em Santa Helena - PR",
+      "item": "https://energiasolarma.com.br/orcamento-energia-solar-santa-helena.html"
+    }
+  ]
+}
+</script>
 </body>
 </html>

@@ -486,6 +486,8 @@
   <div class="container">
     <h2>Navegue pelo site</h2>
     <div class="il-grid">
+      <a href="../alpestre/">Energia solar em Alpestre</a>
+      <a href="../ametista-do-sul/">Energia solar em Ametista do Sul</a>
       <a href="https://energiasolarma.com.br/">Página inicial da M&amp;A</a>
       <a href="https://energiasolarma.com.br/mapa-do-site.html">Mapa do site</a>
       <a href="https://energiasolarma.com.br/guaraciaba/">Energia solar em Guaraciaba</a>
@@ -583,34 +585,91 @@
 
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"LocalBusiness",
-  "name":"M&A Soluções Energéticas",
-  "description":"Energia solar em Águas Frias SC: projeto, instalação e homologação para residências, comércio e propriedades rurais do Oeste catarinense. Dimensionamento a partir da conta real, equipe própria, homologação CELESC inclusa. M&A Cascavel.",
-  "url":"https://energiasolarma.com.br/aguas-frias/",
-  "telephone":"+5545991262160",
-  "address":{
-    "@type":"PostalAddress",
-    "streetAddress":"Rua Lauro Muller, 41",
-    "addressLocality":"Guaraciaba",
-    "addressRegion":"SC",
-    "postalCode":"89920-000",
-    "addressCountry":"BR"
+  "@context": "https://schema.org",
+  "@type": "ElectricalContractor",
+  "@id": "https://energiasolarma.com.br/guaraciaba/#loja",
+  "name": "M&A Soluções Energéticas",
+  "description": "Energia solar em Águas Frias SC: projeto, instalação e homologação para residências, comércio e propriedades rurais do Oeste catarinense. Dimensionamento a partir da conta real, equipe própria, homologação CELESC inclusa.",
+  "url": "https://energiasolarma.com.br/aguas-frias/",
+  "telephone": "+5545991262160",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Lauro Muller, 41",
+    "addressLocality": "Guaraciaba",
+    "addressRegion": "SC",
+    "postalCode": "89920-000",
+    "addressCountry": "BR"
   },
-  "geo":{"@type":"GeoCoordinates","latitude":-26.597716,"longitude":-53.5228959},
-  "sameAs":["https://www.instagram.com/m.a.energias/"],
-  "areaServed":{
-    "@type":"City",
-    "name":"Águas Frias",
-    "containedInPlace":{"@type":"State","name":"Santa Catarina"}
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -26.597716,
+    "longitude": -53.5228959
   },
-  "openingHoursSpecification":[
-    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"},
-    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"12:00"}
-  ]
+  "sameAs": [
+    "https://www.instagram.com/m.a.energias/"
+  ],
+  "areaServed": {
+    "@type": "City",
+    "name": "Águas Frias",
+    "containedInPlace": {
+      "@type": "State",
+      "name": "Santa Catarina"
+    }
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "08:00",
+      "closes": "12:00"
+    }
+  ],
+  "logo": "https://energiasolarma.com.br/apple-touch-icon.png",
+  "image": "https://energiasolarma.com.br/assets/img/og-home.jpg",
+  "parentOrganization": {
+    "@id": "https://energiasolarma.com.br/#organization"
+  }
 }
 </script>
 
 <script src="../main.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://energiasolarma.com.br/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Energia Solar em Guaraciaba",
+      "item": "https://energiasolarma.com.br/guaraciaba/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Energia Solar em Águas Frias",
+      "item": "https://energiasolarma.com.br/aguas-frias/"
+    }
+  ]
+}
+</script>
 </body>
 </html>

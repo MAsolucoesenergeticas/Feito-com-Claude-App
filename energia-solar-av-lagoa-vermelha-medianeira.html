@@ -369,7 +369,8 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "ElectricalContractor",
+  "@id": "https://energiasolarma.com.br/#organization",
   "name": "M&A Soluções Energéticas",
   "description": "A Av. Lagoa Vermelha liga o bairro Nazaré à Cidade Alta. Muitas casas dessa parte de Medianeira já têm energia solar há anos. Por isso esta página trata de ampliação: o que fazer quando o sistema ficou pequeno.",
   "url": "https://www.energiasolarma.com.br/energia-solar-av-lagoa-vermelha-medianeira.html",
@@ -382,13 +383,22 @@
     "postalCode": "85884-000",
     "addressCountry": "BR"
   },
-  "geo":{"@type":"GeoCoordinates","latitude":-25.2970529,"longitude":-54.102987},
-  "sameAs":["https://www.instagram.com/m.a.energias/", "https://www.google.com/maps?cid=17272189157894370368"],
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -25.2970529,
+    "longitude": -54.102987
+  },
+  "sameAs": [
+    "https://www.instagram.com/m.a.energias/",
+    "https://www.google.com/maps?cid=17272189157894370368"
+  ],
   "areaServed": [
     "Av. Lagoa Vermelha",
     "Medianeira",
     "Oeste do Paraná"
-  ]
+  ],
+  "logo": "https://energiasolarma.com.br/apple-touch-icon.png",
+  "image": "https://energiasolarma.com.br/assets/img/og-home.jpg"
 }
 </script>
 <script type="application/ld+json">
@@ -441,5 +451,31 @@
 </script>
 
 <script src="main.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://energiasolarma.com.br/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Energia Solar em Medianeira",
+      "item": "https://energiasolarma.com.br/energia-solar-medianeira.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Energia Solar Av. Lagoa Vermelha Medianeira",
+      "item": "https://energiasolarma.com.br/energia-solar-av-lagoa-vermelha-medianeira.html"
+    }
+  ]
+}
+</script>
 </body>
 </html>
