@@ -647,3 +647,10 @@ body > .menu { position: fixed !important; top: 0 !important; bottom: 0 !importa
   .menu .sub a { color: #B9CCE2; padding: 9px 2px; font-size: 14px; white-space: normal; }
   .menu .sub a:hover { background: none; color: var(--primary); }
 }
+
+/* Bloco blog nas paginas de venda (gerado por blog-src/build.py) */
+.blog-links { background: var(--light); padding: 34px 0; border-top: 1px solid var(--line); }
+.blog-links ul { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 14px 0 16px; }
+.blog-links li a { display: block; height: 100%; background: #fff; border: 1px solid var(--line); border-left: 3px solid var(--primary); border-radius: 6px; padding: 14px 16px; font-weight: 700; color: var(--dark); line-height: 1.4; }
+.blog-links li a:hover { border-left-color: var(--wa1); }
+.blog-links-all { color: var(--secondary); font-weight: 700; text-decoration: underline; }

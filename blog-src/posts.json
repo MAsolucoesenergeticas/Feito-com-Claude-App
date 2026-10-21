@@ -2,265 +2,452 @@
  {
   "slug": "quanto-custa-energia-solar",
   "date": "2026-10-21",
-  "title": "Quanto custa energia solar em Cascavel e região em 2026",
+  "title": "Quanto custa energia solar em 2026: preço por kWp e por consumo",
   "desc": "Quanto custa um sistema de energia solar residencial no Oeste do Paraná, o que muda o preço e como saber o valor certo para a sua casa.",
-  "kw": "energia solar quanto custa",
+  "kw": "quanto custa energia solar",
   "hero": "casa-paineis-solares-vista-aerea",
   "heroalt": "Casa com painéis solares vista de cima",
-  "page": "energia-solar-cascavel.html",
-  "min": 7
+  "page": "orcamento-energia-solar-cascavel.html",
+  "min": 7,
+  "cluster": "c1",
+  "lead": 1,
+  "city": "cascavel",
+  "to": [
+   "quantas-placas-solares-preciso",
+   "kit-energia-solar-300-kwh",
+   "kit-energia-solar-500-kwh",
+   "kit-energia-solar-700-kwh",
+   "energia-solar-vale-a-pena",
+   "financiamento-energia-solar"
+  ]
+ },
+ {
+  "slug": "energia-solar-oeste-do-parana",
+  "date": "2026-10-23",
+  "title": "Energia solar: guia completo para casa, empresa e campo",
+  "desc": "Guia de energia solar do começo ao fim: como funciona, quanto custa, quantas placas, financiamento, Lei 14.300 e instalação, com foco no Oeste do Paraná.",
+  "kw": "como funciona energia solar",
+  "hero": "propriedade-rural-paineis-solares-dois-galpoes",
+  "heroalt": "Propriedade rural com painéis solares em dois galpões",
+  "page": "orcamento-energia-solar-medianeira.html",
+  "min": 10,
+  "cluster": "pilar",
+  "lead": 1,
+  "city": null,
+  "to": []
  },
  {
   "slug": "energia-solar-vale-a-pena",
-  "date": "2026-10-23",
+  "date": "2026-10-27",
   "title": "Energia solar vale a pena em 2026?",
   "desc": "Com a Lei 14.300 e a tarifa da Copel, energia solar ainda compensa? Veja as contas, o prazo de retorno e quando não vale a pena.",
   "kw": "energia solar vale a pena",
   "hero": "residencia-energia-solar-telhado-fibrocimento",
   "heroalt": "Residência com energia solar no telhado de fibrocimento",
   "page": "energia-solar-residencial-cascavel.html",
-  "min": 7
+  "min": 7,
+  "cluster": "c2",
+  "lead": 1,
+  "city": "cascavel",
+  "to": [
+   "quanto-custa-energia-solar",
+   "energia-solar-vai-ser-taxada",
+   "financiamento-energia-solar",
+   "energia-solar-por-assinatura-vale-a-pena"
+  ]
  },
  {
   "slug": "energia-solar-conta-da-copel",
-  "date": "2026-10-27",
+  "date": "2026-10-30",
   "title": "Energia solar e a conta da Copel: como funciona a compensação",
   "desc": "Entenda como os créditos de energia solar aparecem na fatura da Copel, o que ainda se paga e por quanto tempo o crédito vale.",
   "kw": "energia solar copel",
   "hero": "casa-energia-solar-telhado-de-telhas",
   "heroalt": "Casa com painéis solares em telhado de telhas",
-  "page": "energia-solar-cascavel.html",
-  "min": 7
+  "page": "energia-solar-sao-miguel-do-iguacu.html",
+  "min": 7,
+  "cluster": "c2",
+  "lead": 0,
+  "city": "sao-miguel-do-iguacu",
+  "to": [
+   "energia-solar-vai-ser-taxada",
+   "energia-solar-vale-a-pena",
+   "energia-solar-funciona-a-noite"
+  ]
  },
  {
   "slug": "financiamento-energia-solar",
-  "date": "2026-10-30",
+  "date": "2026-11-03",
   "title": "Financiamento de energia solar: parcela, juros e quando compensa",
   "desc": "Como financiar um sistema de energia solar, o que olhar na parcela e como comparar com o valor que você já paga de luz.",
   "kw": "energia solar financiamento",
   "hero": "casa-paineis-solares-duas-aguas-fibrocimento",
   "heroalt": "Casa com painéis solares em duas águas",
-  "page": "financiamento-energia-solar-cascavel.html",
-  "min": 7
+  "page": "financiamento-energia-solar-toledo.html",
+  "min": 7,
+  "cluster": "c2",
+  "lead": 0,
+  "city": "cascavel",
+  "to": [
+   "energia-solar-vale-a-pena",
+   "quanto-custa-energia-solar",
+   "energia-solar-no-campo-granja"
+  ]
  },
  {
   "slug": "energia-solar-vai-ser-taxada",
-  "date": "2026-11-03",
+  "date": "2026-11-06",
   "title": "Energia solar vai ser taxada? O que a Lei 14.300 mudou",
   "desc": "A taxação da energia solar existe, mas é gradual. Veja o que mudou com a Lei 14.300 e o que isso significa para quem instala agora.",
   "kw": "energia solar taxação",
   "hero": "casa-telhado-ceramico-paineis-solares-vista-de-cima",
   "heroalt": "Telhado cerâmico com painéis solares",
-  "page": "energia-solar-cascavel.html",
-  "min": 7
+  "page": "energia-solar-santa-helena.html",
+  "min": 7,
+  "cluster": "c2",
+  "lead": 0,
+  "city": "santa-helena",
+  "to": [
+   "energia-solar-conta-da-copel",
+   "energia-solar-vale-a-pena"
+  ]
  },
  {
   "slug": "energia-solar-dia-nublado-chuva",
-  "date": "2026-11-06",
+  "date": "2026-11-10",
   "title": "Energia solar funciona em dia nublado e com chuva?",
   "desc": "Sim, funciona, mas produz menos. Veja quanto cai a geração em dia nublado e por que a conta do ano continua fechando.",
   "kw": "energia solar funciona em dias nublados",
   "hero": "paineis-solares-telhado-ceramico-residencia",
   "heroalt": "Painéis solares em telhado cerâmico residencial",
-  "page": "energia-solar-cascavel.html",
-  "min": 6
+  "page": "energia-solar-residencial-corbelia.html",
+  "min": 6,
+  "cluster": "c3",
+  "lead": 0,
+  "city": "corbelia",
+  "to": [
+   "energia-solar-funciona-a-noite",
+   "energia-solar-conta-da-copel",
+   "on-grid-off-grid-hibrido"
+  ]
  },
  {
   "slug": "energia-solar-com-bateria-falta-de-luz",
-  "date": "2026-11-10",
+  "date": "2026-11-13",
   "title": "Energia solar funciona quando falta luz? Bateria e sistema híbrido",
   "desc": "O sistema comum desliga quando a rede cai. Veja como funciona a energia solar com bateria e se vale o custo extra.",
   "kw": "energia solar quando falta luz",
   "hero": "equipe-instalando-paineis-solares-sobrado",
   "heroalt": "Equipe da M&A instalando painéis solares em sobrado",
-  "page": "energia-solar-cascavel.html",
-  "min": 7
+  "page": "energia-solar-residencial-missal.html",
+  "min": 7,
+  "cluster": "c3",
+  "lead": 0,
+  "city": "missal",
+  "to": [
+   "on-grid-off-grid-hibrido",
+   "energia-solar-funciona-a-noite"
+  ]
  },
  {
   "slug": "quantas-placas-solares-preciso",
-  "date": "2026-11-13",
-  "title": "Quantas placas solares eu preciso? Conta para 300, 500 e 700 kWh",
-  "desc": "Uma conta simples para saber quantas placas solares sua casa precisa, com exemplos de 300, 500 e 700 kWh por mês.",
-  "kw": "energia solar 500 kwh",
+  "date": "2026-11-17",
+  "title": "Quantas placas solares eu preciso? Como calcular pela conta de luz",
+  "desc": "Uma conta simples para descobrir quantas placas solares a sua casa precisa a partir da fatura de luz, com exemplos.",
+  "kw": "quantas placas solares preciso",
   "hero": "casa-paineis-solares-varias-aguas",
   "heroalt": "Casa com painéis solares em várias águas",
-  "page": "energia-solar-cascavel.html",
-  "min": 7
+  "page": "orcamento-energia-solar-toledo.html",
+  "min": 7,
+  "cluster": "c1",
+  "lead": 0,
+  "city": "toledo",
+  "to": [
+   "kit-energia-solar-300-kwh",
+   "kit-energia-solar-500-kwh",
+   "kit-energia-solar-700-kwh",
+   "kit-energia-solar-900-kwh",
+   "energia-solar-1000-kwh-ou-mais"
+  ]
  },
  {
   "slug": "kit-energia-solar-300-kwh",
-  "date": "2026-11-17",
+  "date": "2026-11-20",
   "title": "Kit de energia solar para 300 kWh por mês: placas, preço e retorno",
   "desc": "Quantas placas, quanto custa e em quanto tempo se paga um sistema de energia solar para quem consome 300 kWh por mês.",
   "kw": "kit energia solar 300 kwh",
   "hero": "casa-terrea-energia-solar-fibrocimento",
   "heroalt": "Casa térrea com painéis solares em telhado de fibrocimento",
-  "page": "energia-solar-residencial-cascavel.html",
-  "min": 6
+  "page": "energia-solar-residencial-medianeira.html",
+  "min": 6,
+  "cluster": "c1",
+  "lead": 0,
+  "city": "medianeira",
+  "to": [
+   "kit-energia-solar-500-kwh",
+   "quantas-placas-solares-preciso",
+   "financiamento-energia-solar"
+  ]
  },
  {
   "slug": "kit-energia-solar-500-kwh",
-  "date": "2026-11-20",
+  "date": "2026-11-24",
   "title": "Kit de energia solar para 500 kWh por mês: quantas placas e quanto custa",
   "desc": "Conta completa para 500 kWh por mês: número de placas, espaço no telhado, preço de referência e tempo de retorno.",
   "kw": "kit energia solar 500 kwh",
   "hero": "paineis-solares-telhado-ceramico-residencia",
   "heroalt": "Painéis solares em telhado cerâmico residencial",
-  "page": "orcamento-energia-solar-cascavel.html",
-  "min": 6
+  "page": "orcamento-energia-solar-foz-do-iguacu.html",
+  "min": 6,
+  "cluster": "c1",
+  "lead": 0,
+  "city": "foz-do-iguacu",
+  "to": [
+   "kit-energia-solar-300-kwh",
+   "kit-energia-solar-700-kwh",
+   "quantas-placas-solares-preciso"
+  ]
  },
  {
   "slug": "kit-energia-solar-700-kwh",
-  "date": "2026-11-24",
+  "date": "2026-11-27",
   "title": "Kit de energia solar para 700 kWh por mês: placas, telhado e preço",
   "desc": "Para quem paga mais de R$ 650 de luz: quantas placas para 700 kWh, como dividir no telhado e quanto custa.",
   "kw": "kit energia solar 700 kwh mês preço",
   "hero": "casa-paineis-solares-vista-aerea",
   "heroalt": "Casa com painéis solares, vista aérea",
-  "page": "energia-solar-residencial-cascavel.html",
-  "min": 6
+  "page": "energia-solar-residencial-marechal-candido-rondon.html",
+  "min": 6,
+  "cluster": "c1",
+  "lead": 0,
+  "city": "marechal-candido-rondon",
+  "to": [
+   "kit-energia-solar-500-kwh",
+   "kit-energia-solar-900-kwh",
+   "financiamento-energia-solar"
+  ]
  },
  {
   "slug": "kit-energia-solar-900-kwh",
-  "date": "2026-11-27",
+  "date": "2026-12-01",
   "title": "Energia solar para 900 kWh por mês: kit ou projeto sob medida?",
   "desc": "Quantas placas para 900 kWh por mês, quanto custa e por que nessa faixa o projeto sob medida costuma vencer o kit pronto.",
   "kw": "kit energia solar 900 kwh",
   "hero": "paineis-solares-telhado-ceramico-e-metalico",
   "heroalt": "Painéis solares em telhado cerâmico e metálico",
-  "page": "orcamento-energia-solar-cascavel.html",
-  "min": 6
+  "page": "orcamento-energia-solar-palotina.html",
+  "min": 6,
+  "cluster": "c1",
+  "lead": 0,
+  "city": "palotina",
+  "to": [
+   "kit-energia-solar-700-kwh",
+   "energia-solar-1000-kwh-ou-mais",
+   "quantas-placas-solares-preciso"
+  ]
  },
  {
   "slug": "energia-solar-1000-kwh-ou-mais",
-  "date": "2026-12-01",
+  "date": "2026-12-04",
   "title": "Energia solar para 1.000, 1.500, 2.000 e 3.000 kWh por mês",
   "desc": "Quantas placas, quanto espaço e quanto custa energia solar para comércio, granja e propriedades que consomem acima de 1.000 kWh.",
   "kw": "energia solar 1000 kwh mês preço",
   "hero": "barracao-paineis-solares-tres-coberturas",
   "heroalt": "Barracão com painéis solares em três coberturas",
-  "page": "energia-solar-para-empresas-cascavel.html",
-  "min": 6
+  "page": "energia-solar-industrial-toledo.html",
+  "min": 6,
+  "cluster": "c5",
+  "lead": 0,
+  "city": "toledo",
+  "to": [
+   "kit-energia-solar-900-kwh",
+   "energia-solar-para-empresas"
+  ]
  },
  {
   "slug": "on-grid-off-grid-hibrido",
-  "date": "2026-12-04",
+  "date": "2026-12-08",
   "title": "On grid, off grid ou híbrido: qual sistema solar escolher",
   "desc": "A diferença entre os três tipos de sistema solar, quando cada um faz sentido e se o off grid precisa de autorização.",
   "kw": "energia solar off grid",
   "hero": "abrigo-inversores-usina-solar-rural",
   "heroalt": "Abrigo de inversores de uma usina solar rural",
-  "page": "orcamento-energia-solar-cascavel.html",
-  "min": 6
+  "page": "energia-solar-residencial-medianeira.html",
+  "min": 6,
+  "cluster": "c3",
+  "lead": 1,
+  "city": "medianeira",
+  "to": [
+   "energia-solar-com-bateria-falta-de-luz",
+   "energia-solar-funciona-a-noite",
+   "energia-solar-dia-nublado-chuva"
+  ]
  },
  {
   "slug": "energia-solar-apartamento-condominio",
-  "date": "2026-12-08",
+  "date": "2026-12-11",
   "title": "Energia solar para apartamento e condomínio: o que dá para fazer",
   "desc": "Três caminhos para quem mora em apartamento ter energia solar: sistema do condomínio, geração remota e kits de varanda.",
   "kw": "energia solar para apartamento",
   "hero": "predio-comercial-paineis-solares-laje-e-fibrocimento",
   "heroalt": "Prédio com painéis solares na laje e no fibrocimento",
-  "page": "energia-solar-cascavel.html",
-  "min": 6
+  "page": "energia-solar-residencial-cascavel.html",
+  "min": 6,
+  "cluster": "c2",
+  "lead": 0,
+  "city": "cascavel",
+  "to": [
+   "energia-solar-por-assinatura-vale-a-pena",
+   "energia-solar-vale-a-pena"
+  ]
  },
  {
   "slug": "energia-solar-para-empresas",
-  "date": "2026-12-11",
-  "title": "Energia solar para empresas: retorno, cuidados e financiamento",
-  "desc": "Por que comércio e empresa costumam ter o retorno mais rápido com energia solar e o que conferir antes de fechar.",
-  "kw": "energia solar para empresas",
+  "date": "2026-12-15",
+  "title": "Energia solar para empresas vale a pena? Retorno, Grupo A e Grupo B",
+  "desc": "Por que comércio e empresa costumam ter o retorno mais rápido com energia solar, a diferença entre Grupo A e Grupo B e o que conferir antes.",
+  "kw": "vale a pena energia solar para empresa",
   "hero": "galpao-energia-solar-telhado-fibrocimento",
   "heroalt": "Galpão com energia solar no telhado de fibrocimento",
   "page": "energia-solar-para-empresas-cascavel.html",
-  "min": 6
+  "min": 6,
+  "cluster": "c5",
+  "lead": 1,
+  "city": "foz-do-iguacu",
+  "to": [
+   "energia-solar-1000-kwh-ou-mais",
+   "financiamento-energia-solar",
+   "energia-solar-no-campo-granja"
+  ]
  },
  {
   "slug": "energia-solar-no-campo-granja",
-  "date": "2026-12-15",
+  "date": "2026-12-18",
   "title": "Energia solar no campo: granja, aviário e propriedade rural",
   "desc": "Como funciona energia solar em granja e propriedade rural no Oeste do Paraná, galpão ou solo, crédito rural e cuidados.",
   "kw": "energia solar rural",
   "hero": "galpoes-de-granja-energia-solar",
   "heroalt": "Galpões de granja com energia solar",
-  "page": "energia-solar-para-agronegocio-cascavel.html",
-  "min": 6
+  "page": "energia-solar-para-agronegocio-assis-chateaubriand.html",
+  "min": 6,
+  "cluster": "c5",
+  "lead": 0,
+  "city": "nova-santa-rosa",
+  "to": [
+   "energia-solar-para-empresas",
+   "financiamento-energia-solar",
+   "energia-solar-1000-kwh-ou-mais"
+  ]
  },
  {
   "slug": "energia-solar-funciona-a-noite",
-  "date": "2026-12-18",
+  "date": "2026-12-22",
   "title": "Energia solar funciona à noite?",
   "desc": "As placas não geram à noite, mas a casa segue com conta baixa. Entenda como o crédito do dia paga o consumo da noite.",
   "kw": "energia solar funciona a noite",
   "hero": "casa-energia-solar-telhado-de-telhas",
   "heroalt": "Casa com energia solar em telhado de telhas",
-  "page": "energia-solar-residencial-cascavel.html",
-  "min": 6
+  "page": "energia-solar-residencial-cafelandia.html",
+  "min": 6,
+  "cluster": "c3",
+  "lead": 0,
+  "city": "cafelandia",
+  "to": [
+   "energia-solar-dia-nublado-chuva",
+   "energia-solar-com-bateria-falta-de-luz",
+   "energia-solar-conta-da-copel"
+  ]
  },
  {
   "slug": "energia-solar-da-choque",
-  "date": "2026-12-22",
+  "date": "2026-12-25",
   "title": "Energia solar dá choque? Riscos e proteções",
   "desc": "Onde está o risco de choque num sistema solar, quais proteções a instalação precisa ter e o que nunca fazer sozinho.",
   "kw": "energia solar da choque",
   "hero": "casa-energia-solar-telhado-fibrocimento-dois-conjuntos",
   "heroalt": "Casa com dois conjuntos de painéis solares",
-  "page": "instalacao-de-energia-solar-cascavel.html",
-  "min": 6
+  "page": "instalacao-de-energia-solar-medianeira.html",
+  "min": 6,
+  "cluster": "c4",
+  "lead": 0,
+  "city": "medianeira",
+  "to": [
+   "manutencao-energia-solar-vida-util",
+   "quanto-tempo-instalar-energia-solar"
+  ]
  },
  {
   "slug": "manutencao-energia-solar-vida-util",
-  "date": "2026-12-25",
+  "date": "2026-12-29",
   "title": "Manutenção de energia solar e vida útil das placas e do inversor",
   "desc": "Quanto tempo duram placas e inversor, o que a manutenção inclui e como saber se o seu sistema está gerando menos.",
   "kw": "energia solar manutenção",
   "hero": "modulos-fotovoltaicos-cobertura-metalica",
   "heroalt": "Módulos fotovoltaicos em cobertura metálica",
-  "page": "energia-solar-cascavel.html",
-  "min": 6
+  "page": "empresa-de-energia-solar-cascavel.html",
+  "min": 6,
+  "cluster": "c4",
+  "lead": 0,
+  "city": "cascavel",
+  "to": [
+   "energia-solar-da-choque",
+   "quanto-tempo-instalar-energia-solar",
+   "energia-solar-valoriza-imovel"
+  ]
  },
  {
   "slug": "quanto-tempo-instalar-energia-solar",
-  "date": "2026-12-29",
+  "date": "2027-01-01",
   "title": "Quanto tempo leva para instalar energia solar?",
   "desc": "Da visita técnica à primeira conta com desconto: as etapas da instalação de energia solar e o que costuma atrasar.",
-  "kw": "energia solar instalação",
+  "kw": "quanto tempo demora para instalar energia solar",
   "hero": "equipe-instalando-paineis-solares-sobrado",
   "heroalt": "Equipe da M&A instalando painéis solares em sobrado",
   "page": "instalacao-de-energia-solar-cascavel.html",
-  "min": 6
+  "min": 6,
+  "cluster": "c4",
+  "lead": 1,
+  "city": "cascavel",
+  "to": [
+   "energia-solar-da-choque",
+   "manutencao-energia-solar-vida-util",
+   "energia-solar-conta-da-copel"
+  ]
  },
  {
   "slug": "energia-solar-por-assinatura-vale-a-pena",
-  "date": "2027-01-01",
+  "date": "2027-01-05",
   "title": "Energia solar por assinatura vale a pena?",
   "desc": "Como funciona a energia solar por assinatura, quanto desconto ela dá e quando um sistema próprio rende mais.",
   "kw": "energia solar por assinatura vale a pena",
   "hero": "usina-solar-solo-duas-fileiras",
   "heroalt": "Usina solar no solo com duas fileiras de painéis",
-  "page": "energia-solar-residencial-cascavel.html",
-  "min": 6
+  "page": "energia-solar-residencial-foz-do-iguacu.html",
+  "min": 6,
+  "cluster": "c2",
+  "lead": 0,
+  "city": "foz-do-iguacu",
+  "to": [
+   "energia-solar-vale-a-pena",
+   "energia-solar-apartamento-condominio"
+  ]
  },
  {
   "slug": "energia-solar-valoriza-imovel",
-  "date": "2027-01-05",
+  "date": "2027-01-08",
   "title": "Energia solar valoriza o imóvel?",
   "desc": "Por que casa com energia solar pesa na venda e no aluguel, e quais documentos fazem o sistema valer na negociação.",
   "kw": "energia solar valoriza imovel",
   "hero": "casa-paineis-solares-varias-aguas",
   "heroalt": "Casa com painéis solares em várias águas",
-  "page": "energia-solar-residencial-cascavel.html",
-  "min": 6
- },
- {
-  "slug": "energia-solar-oeste-do-parana",
-  "date": "2027-01-08",
-  "title": "Energia solar no Oeste do Paraná: sol, Copel e cidades atendidas",
-  "desc": "Quanto um sistema gera no Oeste do Paraná, o que a região tem de diferente e as cidades onde a M&A atende.",
-  "kw": "energia solar paraná",
-  "hero": "propriedade-rural-paineis-solares-dois-galpoes",
-  "heroalt": "Propriedade rural com painéis solares em dois galpões",
-  "page": "energia-solar-cascavel.html",
-  "min": 6
+  "page": "energia-solar-residencial-toledo.html",
+  "min": 6,
+  "cluster": "c2",
+  "lead": 0,
+  "city": "toledo",
+  "to": [
+   "energia-solar-vale-a-pena",
+   "manutencao-energia-solar-vida-util"
+  ]
  }
 ]
