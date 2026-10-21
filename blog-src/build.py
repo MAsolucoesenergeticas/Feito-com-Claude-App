@@ -285,6 +285,10 @@ def pagina(slug, titulo, desc, canon, og_img, ld_blocos, miolo):
             '<script src="/main.js" defer></script>\n</body>\n</html>\n')
 
 
+AUTOR = {"@type": "Person", "@id": SITE + "/#luiz-carlos-da-cruz", "name": "Luiz Carlos da Cruz",
+         "jobTitle": "Engenheiro Eletricista", "identifier": "CREA-PR 165161/D",
+         "url": SITE + "/sobre.html", "worksFor": {"@id": SITE + "/#organization"}}
+
 RASTREIO = """<script>
 document.addEventListener('click', function (e) {
   var a = e.target.closest && e.target.closest('a[data-cta]');
@@ -346,7 +350,7 @@ def main():
   <div class="container container-narrow">
     <span class="eyebrow">Blog · Energia solar</span>
     <h1>{html.escape(p["title"])}</h1>
-    <p class="post-meta">Por M&amp;A Soluções Energéticas · <time datetime="{p["date"]}">{data_pt(d)}</time> · {minutos} min de leitura</p>
+    <p class="post-meta">Por <a href="/sobre.html" rel="author">Eng. Luiz Carlos da Cruz</a>, engenheiro eletricista (CREA-PR 165161/D) · <time datetime="{p["date"]}">{data_pt(d)}</time> · {minutos} min de leitura</p>
   </div>
 </section>
 <div class="post-hero"><div class="post-hero-box">{himg}</div></div>
@@ -357,7 +361,7 @@ def main():
         artigo = {"@context": "https://schema.org", "@type": "BlogPosting", "headline": p["title"], "description": p["desc"],
                   "image": SITE + og, "datePublished": p["date"], "dateModified": p["date"], "inLanguage": "pt-BR",
                   "keywords": p.get("kw", ""),
-                  "author": {"@type": "Organization", "@id": SITE + "/#organization", "name": "M&A Soluções Energéticas"},
+                  "author": AUTOR,
                   "publisher": {"@id": SITE + "/#organization"},
                   "mainEntityOfPage": canon}
         if slug != PILAR and PILAR in pub_slugs:

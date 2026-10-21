@@ -35,3 +35,4 @@
 .post-next{border-top:1px solid var(--line);margin-top:36px;padding-top:8px}
 .post-next h2{font-size:20px;margin:18px 0 10px}
 .post-next ul{margin-left:20px}
+.post-meta a{color:#fff;text-decoration:underline}
