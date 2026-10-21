@@ -1,0 +1,34 @@
+/* Blog M&A: complementa o style.css do site */
+.post-head{background:var(--dark);color:#fff;padding:56px 0 48px}
+.post-head .eyebrow{color:var(--primary)}
+.post-head h1{color:#fff;font-size:clamp(28px,4.2vw,44px);margin:14px 0 16px;max-width:860px}
+.post-meta{color:#A9BDD6;font-size:14px}
+.post-hero{max-width:1240px;margin:-24px auto 0;padding:0 24px}
+.post-hero-box{width:100%;height:clamp(220px,42vw,480px);border-radius:8px;overflow:hidden;background:var(--light)}
+.post{padding:44px 0 24px;font-size:17.5px;line-height:1.8}
+.post h2{font-size:clamp(22px,3vw,28px);margin:40px 0 14px}
+.post p{margin-bottom:18px}
+.post ul{margin:0 0 22px 22px}
+.post li{margin-bottom:8px}
+.post strong{color:var(--dark)}
+.post a:not(.btn-wa):not(.btn){color:var(--secondary);text-decoration:underline}
+.post-fig{margin:30px 0;border-radius:8px;overflow:hidden}
+.post-fig img{height:auto;max-height:460px}
+.cta-box{background:linear-gradient(160deg,#F0FBF5,#E4F7EC);border:1px solid #BFE9D2;border-left:4px solid var(--wa1);border-radius:8px;padding:28px;margin:34px 0}
+.cta-box h3{font-size:20px;margin-bottom:8px}
+.cta-box p{font-size:15.5px;margin-bottom:18px}
+.cta-box.cta-fim{background:var(--dark);border:0;border-left:4px solid var(--primary);color:#C9D6E6}
+.cta-box.cta-fim h3{color:#fff}
+.cta-box.cta-fim .btn{background:var(--primary);color:var(--dark)}
+.post-more{background:var(--light);padding:48px 0}
+.post-more h2{margin-bottom:22px;font-size:24px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
+.card .thumb{height:180px}
+.card .body{padding:20px}
+.card h3{font-size:18px;margin-bottom:8px}
+.card p{font-size:14.5px;margin-bottom:0}
+.card time{display:block;font-size:12.5px;color:var(--muted);margin-bottom:6px}
+.blog-intro{padding:48px 0 12px}
+.blog-intro h1{font-size:clamp(28px,4vw,40px);margin-bottom:12px}
+.blog-list{padding:20px 0 64px}
