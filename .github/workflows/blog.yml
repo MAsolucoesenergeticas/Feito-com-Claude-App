@@ -22,9 +22,11 @@ jobs:
         with:
           python-version: "3.12"
       - run: python3 blog-src/build.py
+      - name: Avisar buscadores (IndexNow)
+        run: python3 blog-src/indexnow.py
       - name: Salvar se algo mudou
         run: |
           git config user.name "blog-bot"
           git config user.email "blog-bot@users.noreply.github.com"
-          git add blog sitemap.xml *.html
+          git add blog sitemap.xml *.html blog-src/indexnow-enviados.json
           git diff --cached --quiet || (git commit -m "Blog: publica posts do dia" && git push)
