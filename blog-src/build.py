@@ -268,13 +268,6 @@ def head(titulo, desc, canon, og_img, extra_ld=""):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
 {GTM_HEAD}
-<script async src="https://www.googletagmanager.com/gtag/js?id={GA}"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){{dataLayer.push(arguments);}}
-  gtag('js', new Date());
-  gtag('config', '{GA}');
-</script>
 {extra_ld}
 </head>'''
 

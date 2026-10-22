@@ -596,12 +596,12 @@
      11. RASTREAMENTO DE CTA
      Todo clique em botao ou link de conversao gera o evento cta_click:
      Um unico caminho por vez (para nao contar em dobro):
-     - CTA_ENVIAR_DIRETO_GA4 = true : envia direto ao GA4 via gtag (modo atual)
-     - CTA_ENVIAR_DIRETO_GA4 = false: empurra para o dataLayer; o Google Tag Manager
+     - CTA_ENVIAR_DIRETO_GA4 = true : envia direto ao GA4 via gtag (so se o gtag voltar as paginas)
+     - CTA_ENVIAR_DIRETO_GA4 = false: empurra para o dataLayer; o Google Tag Manager (modo atual)
        (acionador "Evento personalizado: cta_click") envia ao GA4.
-     Troque para false so depois de publicar o contêiner do Tag Manager.
+     Contêiner GTM-P4SMG4ZH publicado em 21/10/2026: modo atual = false.
      ====================================================================== */
-  var CTA_ENVIAR_DIRETO_GA4 = true;
+  var CTA_ENVIAR_DIRETO_GA4 = false;
   var CTA_SELETOR = 'a.btn-wa, a.btn, a.js-wa, a[data-cta], a[href^="tel:"], a[href*="wa.me"], ' +
                     '.magnum-cta, .blog-links a, .post-next a, .cta-box a, .card';
 
