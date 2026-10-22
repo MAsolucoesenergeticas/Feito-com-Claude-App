@@ -584,11 +584,24 @@
       if (el.dataset.state === 'open' && !el.contains(e.target)) closePanel();
     });
 
-    /* Proativo: 7s, uma vez por sessao */
+    /* Proativo: 7s depois da primeira interacao (rolar, tocar ou clicar), uma vez por sessao.
+       Esperar a interacao evita que o painel abra sozinho enquanto a pagina ainda esta carregando:
+       ele virava o maior elemento da tela e piorava o LCP medido pelo PageSpeed. */
     if (!getSession('magnumSeen', null)) {
-      setTimeout(function () {
-        if (el.dataset.state === 'closed') openPanel(true);
-      }, DELAY);
+      var armado = false;
+      var armar = function () {
+        if (armado) return;
+        armado = true;
+        ['scroll', 'pointerdown', 'keydown', 'touchstart'].forEach(function (ev) {
+          window.removeEventListener(ev, armar, true);
+        });
+        setTimeout(function () {
+          if (el.dataset.state === 'closed') openPanel(true);
+        }, DELAY);
+      };
+      ['scroll', 'pointerdown', 'keydown', 'touchstart'].forEach(function (ev) {
+        window.addEventListener(ev, armar, { capture: true, passive: true, once: false });
+      });
     }
   }
 
