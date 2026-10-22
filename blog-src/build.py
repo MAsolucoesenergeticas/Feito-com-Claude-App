@@ -28,7 +28,7 @@ OUT = ROOT / OUT_NAME
 GA = "G-GW7B5HWNTV"
 GTM_ID = "GTM-P4SMG4ZH"
 GTM_HEAD = '''<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=\'https://www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);})(window,document,\'script\',\'dataLayer\',\'''' + GTM_ID + '''\');</script>
+<script>window.addEventListener('load',function(){setTimeout(function(){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P4SMG4ZH');},0);});</script>
 <!-- End Google Tag Manager -->'''
 GTM_BODY = '\n<!-- Google Tag Manager (noscript) -->\n<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=' + GTM_ID + '" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\n<!-- End Google Tag Manager (noscript) -->'
 MESES = ["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"]
@@ -121,6 +121,14 @@ def tipo_pagina(arquivo):
             c = nome[len(pref):]
             return (tipo, c, rot.format(c=CIDADES[c]))
     return None
+
+
+def preload_hero(nome):
+    tam = sorted(int(m.group(1)) for f in (ROOT / "img" / "obras").glob(f"{nome}-*.webp")
+                 if (m := re.search(r"-(\d+)\.webp$", f.name)))
+    srcset = ", ".join(f"/img/obras/{nome}-{t}.webp {t}w" for t in tam)
+    return (f'<link rel="preload" as="image" fetchpriority="high" href="/img/obras/{nome}-{tam[-1]}.webp" '
+            f'imagesrcset="{srcset}" imagesizes="(max-width:1240px) 100vw, 1240px" type="image/webp">')
 
 
 def expandir(corpo, p, pub_slugs, por_slug):
@@ -264,9 +272,7 @@ def head(titulo, desc, canon, og_img, extra_ld=""):
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/style.css">
 <link rel="stylesheet" href="/{OUT_NAME}/blog.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+<link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 {GTM_HEAD}
 {extra_ld}
 </head>'''
@@ -368,7 +374,7 @@ def main():
         trilha = [{"@type": "ListItem", "position": 1, "name": "Início", "item": SITE + "/"},
                   {"@type": "ListItem", "position": 2, "name": "Blog", "item": SITE + "/blog/"}]
         trilha.append({"@type": "ListItem", "position": 3, "name": p["title"], "item": canon})
-        blocos = [ld(artigo), ld({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": trilha})]
+        blocos = [preload_hero(p["hero"]), ld(artigo), ld({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": trilha})]
         (OUT / slug).mkdir()
         (OUT / slug / "index.html").write_text(
             pagina(slug, p["title"] + " | M&A Soluções Energéticas", p["desc"], canon, SITE + og, blocos, miolo),
