@@ -97,9 +97,9 @@ REVERSO = {
     "industrial": ["energia-solar-1000-kwh-ou-mais", "energia-solar-para-empresas", "financiamento-energia-solar"],
     "agro": ["energia-solar-no-campo-granja", "financiamento-energia-solar", "energia-solar-1000-kwh-ou-mais"],
     "instalacao": ["quanto-tempo-instalar-energia-solar", "energia-solar-da-choque", "energia-solar-conta-da-copel"],
-    "empresa": ["manutencao-energia-solar-vida-util", "quanto-tempo-instalar-energia-solar", "energia-solar-vale-a-pena"],
+    "empresa": ["como-escolher-empresa-energia-solar", "manutencao-energia-solar-vida-util", "quanto-tempo-instalar-energia-solar"],
     "index": ["energia-solar-oeste-do-parana", "quanto-custa-energia-solar", "energia-solar-vale-a-pena", "financiamento-energia-solar"],
-    "equipamentos": ["on-grid-off-grid-hibrido", "manutencao-energia-solar-vida-util", "energia-solar-com-bateria-falta-de-luz"],
+    "equipamentos": ["melhores-paineis-solares", "on-grid-off-grid-hibrido", "manutencao-energia-solar-vida-util", "energia-solar-com-bateria-falta-de-luz"],
 }
 PILAR = "energia-solar-oeste-do-parana"
 

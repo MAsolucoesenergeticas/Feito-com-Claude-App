@@ -18,7 +18,8 @@
    "kit-energia-solar-500-kwh",
    "kit-energia-solar-700-kwh",
    "energia-solar-vale-a-pena",
-   "financiamento-energia-solar"
+   "financiamento-energia-solar",
+   "como-escolher-empresa-energia-solar"
   ]
  },
  {
@@ -393,7 +394,8 @@
   "to": [
    "energia-solar-da-choque",
    "quanto-tempo-instalar-energia-solar",
-   "energia-solar-valoriza-imovel"
+   "energia-solar-valoriza-imovel",
+   "melhores-paineis-solares"
   ]
  },
  {
@@ -469,6 +471,46 @@
    "quanto-custa-energia-solar",
    "energia-solar-por-assinatura-vale-a-pena",
    "energia-solar-com-bateria-falta-de-luz"
+  ]
+ },
+ {
+  "slug": "melhores-paineis-solares",
+  "date": "2027-01-15",
+  "title": "Melhores painéis solares no Brasil: como escolher módulo e inversor",
+  "desc": "Os critérios para escolher o melhor painel solar e o inversor certo para casa no Brasil, e os equipamentos que a M&A instala hoje.",
+  "kw": "melhores painéis solares",
+  "hero": "modulos-fotovoltaicos-cobertura-metalica",
+  "heroalt": "Módulos fotovoltaicos em cobertura metálica",
+  "page": "equipamentos.html",
+  "min": 6,
+  "cluster": "c3",
+  "lead": 0,
+  "city": "corbelia",
+  "to": [
+   "on-grid-off-grid-hibrido",
+   "quantas-placas-solares-preciso",
+   "manutencao-energia-solar-vida-util",
+   "como-escolher-empresa-energia-solar"
+  ]
+ },
+ {
+  "slug": "como-escolher-empresa-energia-solar",
+  "date": "2027-01-19",
+  "title": "Como escolher empresa de energia solar: 10 perguntas antes de fechar",
+  "desc": "As 10 perguntas que separam uma empresa de energia solar séria de uma que só vende kit: CREA, equipe própria, avaliações, garantia e homologação.",
+  "kw": "melhores empresas de energia solar",
+  "hero": "predio-comercial-de-esquina-energia-solar",
+  "heroalt": "Prédio de esquina com painéis solares no telhado",
+  "page": "empresa-de-energia-solar-toledo.html",
+  "min": 6,
+  "cluster": "c4",
+  "lead": 0,
+  "city": "toledo",
+  "to": [
+   "quanto-custa-energia-solar",
+   "melhores-paineis-solares",
+   "quanto-tempo-instalar-energia-solar",
+   "manutencao-energia-solar-vida-util"
   ]
  }
 ]
