@@ -26,6 +26,11 @@ PREVIEW = "--all" in sys.argv
 OUT_NAME = "blog-preview" if PREVIEW else "blog"
 OUT = ROOT / OUT_NAME
 GA = "G-GW7B5HWNTV"
+GTM_ID = "GTM-P4SMG4ZH"
+GTM_HEAD = '''<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=\'https://www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);})(window,document,\'script\',\'dataLayer\',\'''' + GTM_ID + '''\');</script>
+<!-- End Google Tag Manager -->'''
+GTM_BODY = '\n<!-- Google Tag Manager (noscript) -->\n<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=' + GTM_ID + '" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\n<!-- End Google Tag Manager (noscript) -->'
 MESES = ["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"]
 
 
@@ -262,6 +267,7 @@ def head(titulo, desc, canon, og_img, extra_ld=""):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+{GTM_HEAD}
 <script async src="https://www.googletagmanager.com/gtag/js?id={GA}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -279,7 +285,7 @@ def ld(obj):
 
 def pagina(slug, titulo, desc, canon, og_img, ld_blocos, miolo):
     return (head(titulo, desc, canon, og_img, "\n".join(ld_blocos)) +
-            f'\n<body data-ctx="geral" data-cidade="Cascavel">\n\n{parte("svg.html", slug)}\n\n'
+            f'\n<body data-ctx="geral" data-cidade="Cascavel">{GTM_BODY}\n\n{parte("svg.html", slug)}\n\n'
             f'{parte("topbar.html", slug)}\n\n{header(slug)}\n\n{miolo}\n\n'
             f'{parte("footer.html", slug)}\n\n{parte("magnum.html", slug)}\n\n'
             '<script src="/main.js" defer></script>\n</body>\n</html>\n')

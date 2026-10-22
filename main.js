@@ -159,13 +159,21 @@
   }
 
   function registrarLead(origem) {
-    if (typeof window.gtag !== 'function') return;
-    window.gtag('event', 'generate_lead', {
+    var lead = {
       lead_source: 'whatsapp',
       botao:       origem || '(sem origem)',
       cidade:      CTX.cidade || '(sem cidade)',
       intencao:    CTX.id
-    });
+    };
+    /* dataLayer: o Google Tag Manager le este evento (acionador "generate_lead") */
+    window.dataLayer = window.dataLayer || [];
+    var ev = { event: 'generate_lead' };
+    for (var k in lead) { ev[k] = lead[k]; }
+    window.dataLayer.push(ev);
+    /* envio direto ao GA4 so enquanto o GA4 nao roda dentro do Tag Manager */
+    if (CTA_ENVIAR_DIRETO_GA4 && typeof window.gtag === 'function') {
+      window.gtag('event', 'generate_lead', lead);
+    }
   }
 
   /* ======================================================================
