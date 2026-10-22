@@ -19,7 +19,8 @@
    "kit-energia-solar-700-kwh",
    "energia-solar-vale-a-pena",
    "financiamento-energia-solar",
-   "como-escolher-empresa-energia-solar"
+   "como-escolher-empresa-energia-solar",
+   "onde-comprar-energia-solar"
   ]
  },
  {
@@ -282,7 +283,8 @@
   "to": [
    "energia-solar-com-bateria-falta-de-luz",
    "energia-solar-funciona-a-noite",
-   "energia-solar-dia-nublado-chuva"
+   "energia-solar-dia-nublado-chuva",
+   "energia-solar-onde-nao-tem-energia-eletrica"
   ]
  },
  {
@@ -414,7 +416,8 @@
   "to": [
    "energia-solar-da-choque",
    "manutencao-energia-solar-vida-util",
-   "energia-solar-conta-da-copel"
+   "energia-solar-conta-da-copel",
+   "onde-colocar-placas-solares"
   ]
  },
  {
@@ -511,6 +514,63 @@
    "melhores-paineis-solares",
    "quanto-tempo-instalar-energia-solar",
    "manutencao-energia-solar-vida-util"
+  ]
+ },
+ {
+  "slug": "energia-solar-onde-nao-tem-energia-eletrica",
+  "date": "2027-01-22",
+  "title": "Energia solar onde não tem energia elétrica: como funciona o off grid",
+  "desc": "Como funciona a energia solar em sítio, rancho ou galpão sem rede da Copel: baterias, dimensionamento, autorização e quando vale levar a rede.",
+  "kw": "energia solar onde não tem energia elétrica",
+  "hero": "galpao-rural-energia-solar-vista-aerea",
+  "heroalt": "Galpão rural com energia solar, vista aérea",
+  "page": "energia-solar-para-agronegocio-entre-rios-do-oeste.html",
+  "min": 6,
+  "cluster": "c3",
+  "lead": 0,
+  "city": "entre-rios-do-oeste",
+  "to": [
+   "on-grid-off-grid-hibrido",
+   "energia-solar-com-bateria-falta-de-luz",
+   "energia-solar-no-campo-granja"
+  ]
+ },
+ {
+  "slug": "onde-comprar-energia-solar",
+  "date": "2027-01-26",
+  "title": "Onde comprar energia solar: kit pela internet, loja ou empresa instaladora?",
+  "desc": "Comprar kit de energia solar pela internet, em loja ou com uma empresa instaladora: o que cada opção inclui, os riscos e a conta que importa.",
+  "kw": "energia solar onde comprar",
+  "hero": "sobrado-paineis-solares-cobertura-metalica",
+  "heroalt": "Sobrado com painéis solares na cobertura metálica",
+  "page": "orcamento-energia-solar-medianeira.html",
+  "min": 5,
+  "cluster": "c1",
+  "lead": 0,
+  "city": "medianeira",
+  "to": [
+   "como-escolher-empresa-energia-solar",
+   "quanto-custa-energia-solar",
+   "melhores-paineis-solares"
+  ]
+ },
+ {
+  "slug": "onde-colocar-placas-solares",
+  "date": "2027-01-29",
+  "title": "Onde colocar as placas solares: telhado, solo ou laje",
+  "desc": "Onde instalar as placas solares para gerar mais: direção, inclinação, tipo de telhado, solo, laje e o que atrapalha a geração.",
+  "kw": "energia solar onde fica",
+  "hero": "paineis-solares-telhado-ceramico-e-metalico",
+  "heroalt": "Painéis solares em telhado cerâmico e metálico",
+  "page": "instalacao-de-energia-solar-toledo.html",
+  "min": 5,
+  "cluster": "c4",
+  "lead": 0,
+  "city": "palotina",
+  "to": [
+   "quantas-placas-solares-preciso",
+   "melhores-paineis-solares",
+   "quanto-tempo-instalar-energia-solar"
   ]
  }
 ]
