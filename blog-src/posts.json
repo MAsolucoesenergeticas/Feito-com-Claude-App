@@ -3,7 +3,7 @@
   "slug": "quanto-custa-energia-solar",
   "date": "2026-10-21",
   "title": "Quanto custa energia solar em 2026: preço por kWp e por consumo",
-  "desc": "Quanto custa um sistema de energia solar residencial no Oeste do Paraná, o que muda o preço e como saber o valor certo para a sua casa.",
+  "desc": "Quanto custa e qual o valor de um sistema de energia solar para casa em 2026: preço por kWp, por consumo e o que muda o orçamento.",
   "kw": "quanto custa energia solar",
   "hero": "casa-paineis-solares-vista-aerea",
   "heroalt": "Casa com painéis solares vista de cima",
@@ -284,7 +284,8 @@
    "energia-solar-com-bateria-falta-de-luz",
    "energia-solar-funciona-a-noite",
    "energia-solar-dia-nublado-chuva",
-   "energia-solar-onde-nao-tem-energia-eletrica"
+   "energia-solar-onde-nao-tem-energia-eletrica",
+   "energia-solar-fotovoltaica-ou-termica"
   ]
  },
  {
@@ -571,6 +572,25 @@
    "quantas-placas-solares-preciso",
    "melhores-paineis-solares",
    "quanto-tempo-instalar-energia-solar"
+  ]
+ },
+ {
+  "slug": "energia-solar-fotovoltaica-ou-termica",
+  "date": "2027-02-02",
+  "title": "Energia solar fotovoltaica ou térmica: qual a diferença",
+  "desc": "A diferença entre energia solar fotovoltaica, que gera eletricidade e reduz a conta de luz, e térmica, o aquecedor solar de água.",
+  "kw": "energia solar fotovoltaica",
+  "hero": "casa-energia-solar-telhado-fibrocimento-dois-conjuntos",
+  "heroalt": "Casa com dois conjuntos de painéis fotovoltaicos",
+  "page": "energia-solar-residencial-assis-chateaubriand.html",
+  "min": 5,
+  "cluster": "c3",
+  "lead": 0,
+  "city": "assis-chateaubriand",
+  "to": [
+   "on-grid-off-grid-hibrido",
+   "quanto-custa-energia-solar",
+   "quantas-placas-solares-preciso"
   ]
  }
 ]
