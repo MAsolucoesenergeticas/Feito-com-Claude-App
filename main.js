@@ -10,6 +10,7 @@
    8. Scroll Motion
    9. Widget Magnum
    10. Inicializacao
+   11. Rastreamento de CTA
    ========================================================================== */
 
 (function () {
@@ -582,6 +583,56 @@
   }
 
   /* ======================================================================
+     11. RASTREAMENTO DE CTA
+     Todo clique em botao ou link de conversao gera o evento cta_click:
+     - no dataLayer (para o Google Tag Manager, acionador "Evento personalizado: cta_click")
+     - direto no GA4 via gtag, enquanto o GA4 nao estiver dentro do Tag Manager.
+     Quando o GA4 passar a ser disparado pelo Tag Manager, troque
+     CTA_ENVIAR_DIRETO_GA4 para false, para nao contar o clique duas vezes.
+     ====================================================================== */
+  var CTA_ENVIAR_DIRETO_GA4 = true;
+  var CTA_SELETOR = 'a.btn-wa, a.btn, a.js-wa, a[data-cta], a[href^="tel:"], a[href*="wa.me"], ' +
+                    '.magnum-cta, .blog-links a, .post-next a, .cta-box a, .card';
+
+  function tipoDoCta(a) {
+    var h = a.getAttribute('href') || '';
+    if (h.indexOf('wa.me') !== -1 || h.indexOf('whatsapp') !== -1) return 'whatsapp';
+    if (h.indexOf('tel:') === 0) return 'telefone';
+    if (h.indexOf('mailto:') === 0) return 'email';
+    if (/^https?:\/\//.test(h) && h.indexOf(window.location.hostname) === -1) return 'externo';
+    return 'interno';
+  }
+
+  function posicaoDoCta(a) {
+    var p = a.getAttribute('data-wa-ctx') || a.getAttribute('data-cta');
+    if (p) return p;
+    var area = a.closest('#magnum, .topbar, header, footer, aside, nav, section[id], section[class]');
+    if (!area) return '(corpo)';
+    return area.id || (area.className && String(area.className).split(' ')[0]) || area.tagName.toLowerCase();
+  }
+
+  function iniciarRastreioCta() {
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest ? e.target.closest(CTA_SELETOR) : null;
+      if (!a) return;
+      var dados = {
+        cta_tipo:    tipoDoCta(a),
+        cta_texto:   (a.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 100),
+        cta_posicao: posicaoDoCta(a).slice(0, 100),
+        cta_destino: (a.getAttribute('href') || '').split('?')[0].slice(0, 100),
+        pagina:      window.location.pathname
+      };
+      window.dataLayer = window.dataLayer || [];
+      var evento = { event: 'cta_click' };
+      for (var k in dados) { evento[k] = dados[k]; }
+      window.dataLayer.push(evento);
+      if (CTA_ENVIAR_DIRETO_GA4 && typeof window.gtag === 'function') {
+        window.gtag('event', 'cta_click', dados);
+      }
+    }, true);
+  }
+
+  /* ======================================================================
      10. INICIALIZACAO
      ====================================================================== */
   function init() {
@@ -592,6 +643,7 @@
     iniciarMapaSobDemanda();
     iniciarScrollMotion();
     iniciarMagnum();
+    iniciarRastreioCta();
   }
 
   if (document.readyState === 'loading') {

@@ -372,7 +372,7 @@ def main():
         blocos = [ld(artigo), ld({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": trilha})]
         (OUT / slug).mkdir()
         (OUT / slug / "index.html").write_text(
-            pagina(slug, p["title"] + " | M&A Soluções Energéticas", p["desc"], canon, SITE + og, blocos, miolo + "\n" + RASTREIO),
+            pagina(slug, p["title"] + " | M&A Soluções Energéticas", p["desc"], canon, SITE + og, blocos, miolo),
             encoding="utf-8")
 
     if pub:

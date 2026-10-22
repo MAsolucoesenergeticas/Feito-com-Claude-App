@@ -220,14 +220,6 @@
 
 </div></article>
 
-<script>
-document.addEventListener('click', function (e) {
-  var a = e.target.closest && e.target.closest('a[data-cta]');
-  if (a && typeof window.gtag === 'function') {
-    window.gtag('event', 'blog_cta', { post: a.dataset.post, posicao: a.dataset.cta, destino: a.getAttribute('href') });
-  }
-});
-</script>
 
 <footer class="site">
   <div class="container">
