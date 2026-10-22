@@ -165,14 +165,16 @@
       cidade:      CTX.cidade || '(sem cidade)',
       intencao:    CTX.id
     };
-    /* dataLayer: o Google Tag Manager le este evento (acionador "generate_lead") */
-    window.dataLayer = window.dataLayer || [];
-    var ev = { event: 'generate_lead' };
-    for (var k in lead) { ev[k] = lead[k]; }
-    window.dataLayer.push(ev);
-    /* envio direto ao GA4 so enquanto o GA4 nao roda dentro do Tag Manager */
-    if (CTA_ENVIAR_DIRETO_GA4 && typeof window.gtag === 'function') {
-      window.gtag('event', 'generate_lead', lead);
+    /* Um unico caminho por vez, para nao contar o evento em dobro:
+       - CTA_ENVIAR_DIRETO_GA4 = true : envia direto ao GA4 (gtag)
+       - CTA_ENVIAR_DIRETO_GA4 = false: empurra para o dataLayer, e o Google Tag Manager envia */
+    if (CTA_ENVIAR_DIRETO_GA4) {
+      if (typeof window.gtag === 'function') { window.gtag('event', 'generate_lead', lead); }
+    } else {
+      window.dataLayer = window.dataLayer || [];
+      var ev = { event: 'generate_lead' };
+      for (var k in lead) { ev[k] = lead[k]; }
+      window.dataLayer.push(ev);
     }
   }
 
@@ -593,10 +595,11 @@
   /* ======================================================================
      11. RASTREAMENTO DE CTA
      Todo clique em botao ou link de conversao gera o evento cta_click:
-     - no dataLayer (para o Google Tag Manager, acionador "Evento personalizado: cta_click")
-     - direto no GA4 via gtag, enquanto o GA4 nao estiver dentro do Tag Manager.
-     Quando o GA4 passar a ser disparado pelo Tag Manager, troque
-     CTA_ENVIAR_DIRETO_GA4 para false, para nao contar o clique duas vezes.
+     Um unico caminho por vez (para nao contar em dobro):
+     - CTA_ENVIAR_DIRETO_GA4 = true : envia direto ao GA4 via gtag (modo atual)
+     - CTA_ENVIAR_DIRETO_GA4 = false: empurra para o dataLayer; o Google Tag Manager
+       (acionador "Evento personalizado: cta_click") envia ao GA4.
+     Troque para false so depois de publicar o contêiner do Tag Manager.
      ====================================================================== */
   var CTA_ENVIAR_DIRETO_GA4 = true;
   var CTA_SELETOR = 'a.btn-wa, a.btn, a.js-wa, a[data-cta], a[href^="tel:"], a[href*="wa.me"], ' +
@@ -630,12 +633,13 @@
         cta_destino: (a.getAttribute('href') || '').split('?')[0].slice(0, 100),
         pagina:      window.location.pathname
       };
-      window.dataLayer = window.dataLayer || [];
-      var evento = { event: 'cta_click' };
-      for (var k in dados) { evento[k] = dados[k]; }
-      window.dataLayer.push(evento);
-      if (CTA_ENVIAR_DIRETO_GA4 && typeof window.gtag === 'function') {
-        window.gtag('event', 'cta_click', dados);
+      if (CTA_ENVIAR_DIRETO_GA4) {
+        if (typeof window.gtag === 'function') { window.gtag('event', 'cta_click', dados); }
+      } else {
+        window.dataLayer = window.dataLayer || [];
+        var evento = { event: 'cta_click' };
+        for (var k in dados) { evento[k] = dados[k]; }
+        window.dataLayer.push(evento);
       }
     }, true);
   }
