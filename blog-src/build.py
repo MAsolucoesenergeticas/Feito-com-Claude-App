@@ -89,7 +89,7 @@ SERVICOS = [  # prefixo do arquivo, rotulo do botao, tipo de pagina
 ]
 # pagina de venda -> posts que ela deve linkar (bloco "Para entender antes de decidir")
 REVERSO = {
-    "cidade": ["energia-solar-oeste-do-parana", "energia-solar-vale-a-pena", "energia-solar-conta-da-copel"],
+    "cidade": ["energia-solar-oeste-do-parana", "energia-solar-vale-a-pena", "energia-solar-vantagens-e-desvantagens", "energia-solar-conta-da-copel"],
     "orcamento": ["quanto-custa-energia-solar", "quantas-placas-solares-preciso", "energia-solar-vale-a-pena"],
     "financiamento": ["financiamento-energia-solar", "energia-solar-vale-a-pena", "energia-solar-vai-ser-taxada"],
     "residencial": ["kit-energia-solar-300-kwh", "kit-energia-solar-500-kwh", "kit-energia-solar-700-kwh", "energia-solar-dia-nublado-chuva", "quanto-custa-energia-solar"],

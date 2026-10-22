@@ -53,7 +53,8 @@
    "quanto-custa-energia-solar",
    "energia-solar-vai-ser-taxada",
    "financiamento-energia-solar",
-   "energia-solar-por-assinatura-vale-a-pena"
+   "energia-solar-por-assinatura-vale-a-pena",
+   "energia-solar-vantagens-e-desvantagens"
   ]
  },
  {
@@ -448,6 +449,26 @@
   "to": [
    "energia-solar-vale-a-pena",
    "manutencao-energia-solar-vida-util"
+  ]
+ },
+ {
+  "slug": "energia-solar-vantagens-e-desvantagens",
+  "date": "2027-01-12",
+  "title": "Energia solar: vantagens e desvantagens de verdade",
+  "desc": "As vantagens e as desvantagens da energia solar lado a lado, sem enfeite: economia, retorno, taxação, falta de luz, telhado e manutenção.",
+  "kw": "energia solar vantagens e desvantagens",
+  "hero": "casa-telhado-ceramico-paineis-solares-vista-de-cima",
+  "heroalt": "Casa de telhado cerâmico com painéis solares vista de cima",
+  "page": "energia-solar-residencial-santa-helena.html",
+  "min": 7,
+  "cluster": "c2",
+  "lead": 0,
+  "city": "santa-helena",
+  "to": [
+   "energia-solar-vale-a-pena",
+   "quanto-custa-energia-solar",
+   "energia-solar-por-assinatura-vale-a-pena",
+   "energia-solar-com-bateria-falta-de-luz"
   ]
  }
 ]
