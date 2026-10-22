@@ -345,8 +345,26 @@
   ]
  },
  {
-  "slug": "energia-solar-funciona-a-noite",
+  "slug": "energia-solar-por-assinatura-vale-a-pena",
   "date": "2026-12-22",
+  "title": "Energia solar por assinatura vale a pena?",
+  "desc": "Como funciona a energia solar por assinatura, quanto desconto ela dá e quando um sistema próprio rende mais.",
+  "kw": "energia solar por assinatura vale a pena",
+  "hero": "usina-solar-solo-duas-fileiras",
+  "heroalt": "Usina solar no solo com duas fileiras de painéis",
+  "page": "energia-solar-residencial-foz-do-iguacu.html",
+  "min": 6,
+  "cluster": "c2",
+  "lead": 0,
+  "city": "foz-do-iguacu",
+  "to": [
+   "energia-solar-vale-a-pena",
+   "energia-solar-apartamento-condominio"
+  ]
+ },
+ {
+  "slug": "energia-solar-funciona-a-noite",
+  "date": "2026-12-25",
   "title": "Energia solar funciona à noite?",
   "desc": "As placas não geram à noite, mas a casa segue com conta baixa. Entenda como o crédito do dia paga o consumo da noite.",
   "kw": "energia solar funciona a noite",
@@ -364,41 +382,23 @@
   ]
  },
  {
-  "slug": "energia-solar-da-choque",
-  "date": "2026-12-25",
-  "title": "Energia solar dá choque? Riscos e proteções",
-  "desc": "Onde está o risco de choque num sistema solar, quais proteções a instalação precisa ter e o que nunca fazer sozinho.",
-  "kw": "energia solar da choque",
-  "hero": "casa-energia-solar-telhado-fibrocimento-dois-conjuntos",
-  "heroalt": "Casa com dois conjuntos de painéis solares",
-  "page": "instalacao-de-energia-solar-medianeira.html",
-  "min": 6,
-  "cluster": "c4",
-  "lead": 0,
-  "city": "medianeira",
-  "to": [
-   "manutencao-energia-solar-vida-util",
-   "quanto-tempo-instalar-energia-solar"
-  ]
- },
- {
-  "slug": "manutencao-energia-solar-vida-util",
+  "slug": "energia-solar-vantagens-e-desvantagens",
   "date": "2026-12-29",
-  "title": "Manutenção de energia solar e vida útil das placas e do inversor",
-  "desc": "Quanto tempo duram placas e inversor, o que a manutenção inclui e como saber se o seu sistema está gerando menos.",
-  "kw": "energia solar manutenção",
-  "hero": "modulos-fotovoltaicos-cobertura-metalica",
-  "heroalt": "Módulos fotovoltaicos em cobertura metálica",
-  "page": "empresa-de-energia-solar-cascavel.html",
-  "min": 6,
-  "cluster": "c4",
+  "title": "Energia solar: vantagens e desvantagens de verdade",
+  "desc": "As vantagens e as desvantagens da energia solar lado a lado, sem enfeite: economia, retorno, taxação, falta de luz, telhado e manutenção.",
+  "kw": "energia solar vantagens e desvantagens",
+  "hero": "casa-telhado-ceramico-paineis-solares-vista-de-cima",
+  "heroalt": "Casa de telhado cerâmico com painéis solares vista de cima",
+  "page": "energia-solar-residencial-santa-helena.html",
+  "min": 7,
+  "cluster": "c2",
   "lead": 0,
-  "city": "cascavel",
+  "city": "santa-helena",
   "to": [
-   "energia-solar-da-choque",
-   "quanto-tempo-instalar-energia-solar",
-   "energia-solar-valoriza-imovel",
-   "melhores-paineis-solares"
+   "energia-solar-vale-a-pena",
+   "quanto-custa-energia-solar",
+   "energia-solar-por-assinatura-vale-a-pena",
+   "energia-solar-com-bateria-falta-de-luz"
   ]
  },
  {
@@ -422,21 +422,21 @@
   ]
  },
  {
-  "slug": "energia-solar-por-assinatura-vale-a-pena",
+  "slug": "energia-solar-da-choque",
   "date": "2027-01-05",
-  "title": "Energia solar por assinatura vale a pena?",
-  "desc": "Como funciona a energia solar por assinatura, quanto desconto ela dá e quando um sistema próprio rende mais.",
-  "kw": "energia solar por assinatura vale a pena",
-  "hero": "usina-solar-solo-duas-fileiras",
-  "heroalt": "Usina solar no solo com duas fileiras de painéis",
-  "page": "energia-solar-residencial-foz-do-iguacu.html",
+  "title": "Energia solar dá choque? Riscos e proteções",
+  "desc": "Onde está o risco de choque num sistema solar, quais proteções a instalação precisa ter e o que nunca fazer sozinho.",
+  "kw": "energia solar da choque",
+  "hero": "casa-energia-solar-telhado-fibrocimento-dois-conjuntos",
+  "heroalt": "Casa com dois conjuntos de painéis solares",
+  "page": "instalacao-de-energia-solar-medianeira.html",
   "min": 6,
-  "cluster": "c2",
+  "cluster": "c4",
   "lead": 0,
-  "city": "foz-do-iguacu",
+  "city": "medianeira",
   "to": [
-   "energia-solar-vale-a-pena",
-   "energia-solar-apartamento-condominio"
+   "manutencao-energia-solar-vida-util",
+   "quanto-tempo-instalar-energia-solar"
   ]
  },
  {
@@ -458,23 +458,23 @@
   ]
  },
  {
-  "slug": "energia-solar-vantagens-e-desvantagens",
+  "slug": "manutencao-energia-solar-vida-util",
   "date": "2027-01-12",
-  "title": "Energia solar: vantagens e desvantagens de verdade",
-  "desc": "As vantagens e as desvantagens da energia solar lado a lado, sem enfeite: economia, retorno, taxação, falta de luz, telhado e manutenção.",
-  "kw": "energia solar vantagens e desvantagens",
-  "hero": "casa-telhado-ceramico-paineis-solares-vista-de-cima",
-  "heroalt": "Casa de telhado cerâmico com painéis solares vista de cima",
-  "page": "energia-solar-residencial-santa-helena.html",
-  "min": 7,
-  "cluster": "c2",
+  "title": "Manutenção de energia solar e vida útil das placas e do inversor",
+  "desc": "Quanto tempo duram placas e inversor, o que a manutenção inclui e como saber se o seu sistema está gerando menos.",
+  "kw": "energia solar manutenção",
+  "hero": "modulos-fotovoltaicos-cobertura-metalica",
+  "heroalt": "Módulos fotovoltaicos em cobertura metálica",
+  "page": "empresa-de-energia-solar-cascavel.html",
+  "min": 6,
+  "cluster": "c4",
   "lead": 0,
-  "city": "santa-helena",
+  "city": "cascavel",
   "to": [
-   "energia-solar-vale-a-pena",
-   "quanto-custa-energia-solar",
-   "energia-solar-por-assinatura-vale-a-pena",
-   "energia-solar-com-bateria-falta-de-luz"
+   "energia-solar-da-choque",
+   "quanto-tempo-instalar-energia-solar",
+   "energia-solar-valoriza-imovel",
+   "melhores-paineis-solares"
   ]
  },
  {
