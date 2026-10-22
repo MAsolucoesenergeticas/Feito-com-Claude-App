@@ -20,7 +20,16 @@
 <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 <!-- Google Tag Manager -->
-<script>window.addEventListener('load',function(){setTimeout(function(){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P4SMG4ZH');},0);});</script>
+<script>
+/* Terceiros (Tag Manager) carregam na primeira interacao do visitante ou, no maximo, 5 s depois do load: nao disputam a rede com a imagem principal */
+(function(){
+  var EV=['scroll','pointerdown','keydown','touchstart','mousemove'];
+  function quando(fn,maxMs){var feito=false;function ir(){if(feito)return;feito=true;EV.forEach(function(e){window.removeEventListener(e,ir,true)});fn();}
+    EV.forEach(function(e){window.addEventListener(e,ir,{capture:true,passive:true})});
+    window.addEventListener('load',function(){setTimeout(ir,maxMs)});}
+  quando(function(){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P4SMG4ZH');},5000);
+})();
+</script>
 <!-- End Google Tag Manager -->
 </head>
 <body data-ctx="medianeira-av-joao-xxiii" data-cidade="Medianeira">
