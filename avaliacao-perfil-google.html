@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Avalie a M&A no Google | M&A Soluções Energéticas</title>
+<meta name="description" content="Conte como foi sua experiência com a M&A Soluções Energéticas. Leva 1 minuto.">
+<link rel="canonical" href="https://energiasolarma.com.br/avaliacao-perfil-google.html">
+<meta name="robots" content="noindex,follow">
+<meta name="theme-color" content="#08203A">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Inter';src:url(assets/fonts/inter-latin.woff2) format('woff2');font-weight:100 900;font-display:swap}
+*{box-sizing:border-box;margin:0}
+body{font-family:'Inter','Segoe UI',Helvetica,Arial,sans-serif;background:#F5F7FA;color:#42505F;min-height:100vh;line-height:1.55}
+.hero{display:block;width:100%;height:auto;max-width:780px;margin:0 auto}
+body{overflow-x:hidden}
+main{display:flex;justify-content:center;padding:22px 16px 30px}
+.card{background:#fff;border:1px solid #E4E9F0;border-radius:16px;padding:26px 22px;width:100%;max-width:480px;box-shadow:0 8px 28px rgba(8,32,58,.08);margin-top:-6px}
+.bar{height:6px;background:#E4E9F0;border-radius:6px;overflow:hidden;margin-bottom:6px}
+.bar i{display:block;height:100%;width:33%;background:#F2A900;border-radius:6px;transition:width .35s}
+.cont{font-size:13px;color:#8A96A6;margin-bottom:14px}
+.passo{display:none}.passo.on{display:block;animation:ent .3s}
+@keyframes ent{from{opacity:0;transform:translateX(14px)}to{opacity:1;transform:none}}
+h1{color:#08203A;font-size:22px;line-height:1.25;margin-bottom:14px}
+input{width:100%;font:inherit;font-size:17px;padding:14px;border:1.5px solid #E4E9F0;border-radius:10px;color:#08203A;background:#fff}
+input:focus{outline:none;border-color:#0C63C8;box-shadow:0 0 0 3px rgba(12,99,200,.15)}
+.btn{display:block;width:100%;margin-top:16px;font:inherit;font-size:17px;font-weight:700;color:#08203A;background:#F2A900;border:0;border-radius:10px;padding:15px;cursor:pointer;text-align:center;text-decoration:none}
+.btn:hover{background:#d99700}
+.btn.sec{background:#fff;color:#0C63C8;border:1.5px solid #0C63C8;margin-top:10px;font-size:15px}
+.voltar{background:none;border:0;font:inherit;font-size:14px;color:#8A96A6;margin-top:12px;cursor:pointer;width:100%}
+.nao{display:block;text-align:center;margin-top:12px;font-size:14px;color:#0C63C8;cursor:pointer;background:none;border:0;font:inherit;width:100%}
+.msg{color:#b3261e;font-size:14px;margin-top:8px;display:none}
+.demo{position:relative;background:#08203A;border-radius:14px;padding:22px 10px 26px;margin:6px 0 4px;text-align:center;overflow:hidden}
+.demo p{color:#fff;font-size:13px;margin-bottom:10px}
+.est{display:inline-flex;gap:8px;position:relative}
+.est span{font-size:38px;line-height:1;color:#3b5573;transition:color .2s,transform .2s}
+.est span.ac{color:#F2A900;transform:scale(1.18)}
+.mao{position:absolute;font-size:34px;top:30px;left:0;pointer-events:none;opacity:0;transform:translate(0,0);filter:drop-shadow(0 3px 4px rgba(0,0,0,.4))}
+.ok{text-align:center}
+.ok .big{font-size:56px}
+.ok h1{margin:6px 0 8px}
+.foot{text-align:center;font-size:13px;color:#8A96A6;padding:0 16px 22px}
+@media(prefers-reduced-motion:reduce){.passo.on{animation:none}.bar i{transition:none}}
+</style>
+</head>
+<body>
+<img class="hero" src="assets/img/avaliacao-hero-760.webp" srcset="assets/img/avaliacao-hero-760.webp 760w, assets/img/avaliacao-hero-1400.webp 1400w" sizes="100vw" width="1400" height="781" alt="Sua avaliação é importante para nós: M&A Soluções Energéticas" fetchpriority="high">
+<main>
+  <div class="card" id="quiz">
+    <div id="topo"><div class="bar"><i id="prog"></i></div><p class="cont" id="cont">Pergunta 1 de 3</p></div>
+
+    <form class="passo on" data-p="1" novalidate>
+      <h1>Qual é o seu nome?</h1>
+      <input id="nome" type="text" autocomplete="name" maxlength="80" placeholder="Seu nome">
+      <p class="msg">Digite seu nome para continuar.</p>
+      <button class="btn" type="submit">Continuar</button>
+    </form>
+
+    <form class="passo" data-p="2" novalidate>
+      <h1>Em qual cidade você mora?</h1>
+      <input id="cidade" type="text" autocomplete="address-level2" maxlength="60" placeholder="Sua cidade">
+      <p class="msg">Digite sua cidade para continuar.</p>
+      <button class="btn" type="submit">Continuar</button>
+      <button class="voltar" type="button" data-volta="1">Voltar</button>
+    </form>
+
+    <form class="passo" data-p="3" novalidate>
+      <h1>Quantas placas foram instaladas na sua casa ou empresa?</h1>
+      <input id="placas" type="number" inputmode="numeric" min="1" max="999" placeholder="Ex.: 12">
+      <button class="nao" type="button" id="nsei">Não sei dizer</button>
+      <p class="msg">Digite a quantidade de placas ou toque em "Não sei dizer".</p>
+      <button class="btn" type="submit">Continuar</button>
+      <button class="voltar" type="button" data-volta="2">Voltar</button>
+    </form>
+
+    <div class="passo" data-p="4">
+      <h1>Falta só um passo, <span id="nm"></span>!</h1>
+      <p style="margin-bottom:10px">Se você gostou do nosso trabalho, conte isso no Google e deixe as <strong>5 estrelas</strong>. É assim:</p>
+      <div class="demo" aria-hidden="true">
+        <p>Toque nas estrelas e escreva sua opinião</p>
+        <div class="est" id="est"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span><i class="mao" id="mao">👆</i></div>
+      </div>
+      <button class="btn" type="button" id="abrir">Abrir o Google e avaliar</button>
+      <button class="btn sec" type="button" id="ja">Já avaliei</button>
+    </div>
+
+    <div class="passo ok" data-p="5">
+      <div class="big">🌞</div>
+      <h1>Obrigado por nos avaliar!</h1>
+      <p>Sua opinião ajuda outras famílias e empresas a conhecer o trabalho da M&amp;A.</p>
+    </div>
+  </div>
+</main>
+<p class="foot">M&amp;A Soluções Energéticas · Medianeira, PR</p>
+<script>
+/* Preencher depois de criar: URL do Apps Script (planilha) e link de avaliacao do Google */
+var PLANILHA_URL = 'https://script.google.com/macros/s/AKfycbyM4AEwMLI6YzCwqJbIyJ-umiPTdoLYQHhIC62polVCgi2kf26G4KmzH2lDRQNnvfswkw/exec';
+var AVALIACAO_URL = 'https://search.google.com/local/writereview?placeid=ChIJnaJ9JeGt9pQRQLSl8YYks-8';
+
+var d = {nome:'', cidade:'', placas:''}, passo = 1, abriu = false, enviado = false, animTimer;
+var passos = document.querySelectorAll('.passo');
+function dl(o){ try{ (window.dataLayer = window.dataLayer || []).push(o); }catch(e){} }
+function ir(n){
+  passo = n;
+  passos.forEach(function(p){ p.classList.toggle('on', +p.dataset.p === n); });
+  var top = document.getElementById('topo');
+  top.style.display = n <= 3 ? 'block' : 'none';
+  document.getElementById('prog').style.width = (n <= 3 ? n * 33.3 : 100) + '%';
+  document.getElementById('cont').textContent = 'Pergunta ' + Math.min(n,3) + ' de 3';
+  if(n === 4){ document.getElementById('nm').textContent = d.nome.split(' ')[0]; animar(); }
+  var inp = document.querySelector('.passo.on input'); if(inp && n <= 3) setTimeout(function(){ inp.focus(); }, 120);
+  if(n === 5){ clearTimeout(animTimer); dl({event:'cta_click', cta_tipo:'avaliacao_google', cta_texto:'Obrigado', cta_posicao:'quiz_fim', cta_destino:'agradecimento', pagina:location.pathname}); }
+}
+function falha(f){ f.querySelector('.msg').style.display = 'block'; }
+function enviar(){
+  if(enviado) return; enviado = true;
+  if(!PLANILHA_URL) return;
+  var c = new URLSearchParams({nome:d.nome, cidade:d.cidade, placas:d.placas, origem:document.referrer || 'direto'});
+  try{ fetch(PLANILHA_URL, {method:'POST', mode:'no-cors', body:c, keepalive:true}); }catch(e){}
+}
+document.querySelectorAll('form.passo').forEach(function(f){
+  f.addEventListener('submit', function(e){
+    e.preventDefault();
+    var n = +f.dataset.p, v = f.querySelector('input').value.trim();
+    if(!v){ falha(f); return; }
+    f.querySelector('.msg').style.display = 'none';
+    if(n === 1) d.nome = v; if(n === 2) d.cidade = v; if(n === 3){ d.placas = v; enviar(); }
+    ir(n + 1);
+  });
+});
+document.querySelectorAll('[data-volta]').forEach(function(b){ b.addEventListener('click', function(){ ir(+b.dataset.volta); }); });
+document.getElementById('nsei').addEventListener('click', function(){ d.placas = 'não sei'; enviar(); ir(4); });
+
+/* animacao: a maozinha percorre e acende as 5 estrelas, em loop */
+function animar(){
+  var est = document.querySelectorAll('#est span'), mao = document.getElementById('mao');
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches){ est.forEach(function(s){ s.classList.add('ac'); }); return; }
+  var i = 0;
+  function tick(){
+    if(passo !== 4) return;
+    if(i === 0){ est.forEach(function(s){ s.classList.remove('ac'); }); mao.style.opacity = 1; }
+    if(i < 5){
+      var r = est[i].offsetLeft + est[i].offsetWidth / 2 - 12;
+      mao.style.transition = 'transform .45s'; mao.style.transform = 'translate(' + r + 'px,0)';
+      animTimer = setTimeout(function(){ est[i].classList.add('ac'); i++; animTimer = setTimeout(tick, 350); }, 500);
+    } else { animTimer = setTimeout(function(){ i = 0; mao.style.transition = 'none'; mao.style.transform = 'translate(0,0)'; mao.style.opacity = 0; animTimer = setTimeout(tick, 600); }, 1600); }
+  }
+  tick();
+}
+document.getElementById('abrir').addEventListener('click', function(){
+  dl({event:'cta_click', cta_tipo:'avaliacao_google', cta_texto:'Abrir o Google e avaliar', cta_posicao:'quiz_passo4', cta_destino:'google_avaliacao', pagina:location.pathname});
+  if(!AVALIACAO_URL) return;
+  abriu = true; window.open(AVALIACAO_URL, '_blank');
+});
+/* ao voltar do Google para esta aba, mostra o agradecimento */
+document.addEventListener('visibilitychange', function(){ if(!document.hidden && abriu && passo === 4) ir(5); });
+document.getElementById('ja').addEventListener('click', function(){ ir(5); });
+</script>
+</body>
+</html>
