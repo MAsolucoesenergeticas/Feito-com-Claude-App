@@ -809,9 +809,15 @@
   <!-- blog:start -->
   <url>
     <loc>https://energiasolarma.com.br/blog/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://energiasolarma.com.br/blog/energia-solar-oeste-do-parana/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://energiasolarma.com.br/blog/quanto-custa-energia-solar/</loc>
