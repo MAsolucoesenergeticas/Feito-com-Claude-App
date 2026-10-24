@@ -656,3 +656,11 @@ body > .menu { position: fixed !important; top: 0 !important; bottom: 0 !importa
 .blog-links li a { display: block; height: 100%; background: #fff; border: 1px solid var(--line); border-left: 3px solid var(--primary); border-radius: 6px; padding: 14px 16px; font-weight: 700; color: var(--dark); line-height: 1.4; }
 .blog-links li a:hover { border-left-color: var(--wa1); }
 .blog-links-all { color: var(--secondary); font-weight: 700; text-decoration: underline; }
+
+/* breadcrumb visível (v1.3) */
+.breadcrumb { margin: 0 0 8px; font-size: 13.5px; }
+.breadcrumb ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 0; }
+.breadcrumb li { color: #D7E3F2; }
+.breadcrumb li + li::before { content: "›"; margin: 0 8px; color: #A8BFD8; }
+.breadcrumb a { color: #fff; text-decoration: underline; text-underline-offset: 2px; }
+.breadcrumb a:hover { color: var(--primary); }
