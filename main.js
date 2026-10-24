@@ -11,6 +11,7 @@
    9. Widget Magnum
    10. Inicializacao
    11. Rastreamento de CTA
+   12. Carrossel de clientes
    ========================================================================== */
 
 (function () {
@@ -645,6 +646,127 @@
   }
 
   /* ======================================================================
+     12. CARROSSEL DE CLIENTES (arrastar com o mouse + setas)
+     ====================================================================== */
+  function iniciarCarrosselClientes() {
+    var el = document.querySelector('.clientes');
+    var track = el && el.querySelector('.clientes-track');
+    var card = track && track.querySelector('.cliente');
+    if (!card) return;
+
+    var reduzido = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var VELOCIDADE = 32; // px/s, mesmo ritmo da antiga animacao CSS
+    var pos = 0, meio = 0, ultimo = 0, pausaAte = 0;
+    var hover = false, arrastando = false, animando = false, visivel = true;
+
+    // a faixa tem 2 copias identicas: "meio" e a largura de uma copia
+    function medir() { meio = reduzido ? 0 : track.scrollWidth / 2; }
+    // mantem a posicao na faixa central; devolve o deslocamento aplicado
+    function normalizar() {
+      var d = 0;
+      if (!meio) return 0;
+      if (pos >= meio * 1.5) d = -meio;
+      else if (pos <= meio * 0.5) d = meio;
+      if (d) { pos += d; el.scrollLeft = pos; }
+      return d;
+    }
+    function pausar(ms) { pausaAte = Date.now() + ms; }
+
+    el.classList.add('is-js');
+    medir();
+    if (meio) { pos = meio; el.scrollLeft = pos; }
+
+    // as setas sao criadas aqui para nao mexer no HTML de cada pagina
+    var wrap = document.createElement('div');
+    wrap.className = 'clientes-wrap';
+    el.parentNode.insertBefore(wrap, el);
+    wrap.appendChild(el);
+    function criarSeta(lado, rotulo, simbolo) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'clientes-seta clientes-seta-' + lado;
+      b.setAttribute('aria-label', rotulo);
+      b.textContent = simbolo;
+      wrap.appendChild(b);
+      return b;
+    }
+    var voltar = criarSeta('prev', 'Clientes anteriores', '‹');
+    var avancar = criarSeta('next', 'Próximos clientes', '›');
+
+    // animacao das setas: escrevemos o scrollLeft para fechar o laco sem salto
+    function ir(sentido) {
+      var passo = sentido * (card.offsetWidth + 20);
+      var ini = el.scrollLeft, t0 = null, dur = 420;
+      pos = ini; animando = true; pausar(4000);
+      function quadro(t) {
+        if (t0 === null) t0 = t;
+        var p = Math.min(1, (t - t0) / dur);
+        pos = ini + passo * (1 - Math.pow(1 - p, 3));
+        el.scrollLeft = pos;
+        if (p < 1) { requestAnimationFrame(quadro); }
+        else { animando = false; normalizar(); }
+      }
+      requestAnimationFrame(quadro);
+    }
+    voltar.addEventListener('click', function () { if (!animando) ir(-1); });
+    avancar.addEventListener('click', function () { if (!animando) ir(1); });
+
+    // arrastar com o mouse (no toque o navegador ja rola de lado)
+    var x0 = 0, s0 = 0;
+    el.addEventListener('pointerdown', function (e) {
+      if (e.pointerType !== 'mouse' || e.button !== 0 || animando) return;
+      arrastando = true; x0 = e.clientX; s0 = el.scrollLeft; pos = s0;
+      el.classList.add('arrastando');
+      el.setPointerCapture(e.pointerId);
+    });
+    el.addEventListener('pointermove', function (e) {
+      if (!arrastando) return;
+      pos = s0 - (e.clientX - x0);
+      el.scrollLeft = pos;
+      s0 += normalizar();
+    });
+    function soltar() {
+      if (!arrastando) return;
+      arrastando = false;
+      el.classList.remove('arrastando');
+      pausar(3000);
+    }
+    el.addEventListener('pointerup', soltar);
+    el.addEventListener('pointercancel', soltar);
+    el.addEventListener('dragstart', function (e) { e.preventDefault(); });
+
+    // toque, roda do mouse e foco pausam a rolagem automatica por alguns segundos
+    el.addEventListener('touchstart', function () { pausar(5000); }, { passive: true });
+    el.addEventListener('wheel', function () { pausar(3000); }, { passive: true });
+    wrap.addEventListener('focusin', function () { pausar(6000); });
+    el.addEventListener('mouseenter', function () { hover = true; });
+    el.addEventListener('mouseleave', function () { hover = false; });
+    el.addEventListener('scroll', function () {
+      if (animando || arrastando) return;
+      if (Math.abs(el.scrollLeft - pos) > 1.5) { pos = el.scrollLeft; normalizar(); }
+    }, { passive: true });
+    window.addEventListener('resize', medir);
+
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (l) { visivel = l[0].isIntersecting; }).observe(el);
+    }
+
+    // rolagem automatica (desligada com movimento reduzido)
+    if (reduzido) return;
+    function auto(t) {
+      var dt = ultimo ? Math.min(0.1, (t - ultimo) / 1000) : 0;
+      ultimo = t;
+      if (visivel && !hover && !arrastando && !animando && !document.hidden && Date.now() > pausaAte) {
+        pos += VELOCIDADE * dt;
+        el.scrollLeft = pos;
+        normalizar();
+      }
+      requestAnimationFrame(auto);
+    }
+    requestAnimationFrame(auto);
+  }
+
+  /* ======================================================================
      10. INICIALIZACAO
      ====================================================================== */
   function init() {
@@ -656,6 +778,7 @@
     iniciarScrollMotion();
     iniciarMagnum();
     iniciarRastreioCta();
+    iniciarCarrosselClientes();
   }
 
   if (document.readyState === 'loading') {
