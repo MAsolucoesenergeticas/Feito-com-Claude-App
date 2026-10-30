@@ -809,9 +809,15 @@
   <!-- blog:start -->
   <url>
     <loc>https://energiasolarma.com.br/blog/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://energiasolarma.com.br/blog/energia-solar-conta-da-copel/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://energiasolarma.com.br/blog/energia-solar-vale-a-pena/</loc>
