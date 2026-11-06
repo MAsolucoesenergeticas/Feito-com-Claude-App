@@ -809,9 +809,15 @@
   <!-- blog:start -->
   <url>
     <loc>https://energiasolarma.com.br/blog/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://energiasolarma.com.br/blog/energia-solar-vai-ser-taxada/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://energiasolarma.com.br/blog/financiamento-energia-solar/</loc>
