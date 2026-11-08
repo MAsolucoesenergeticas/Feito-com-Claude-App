@@ -139,7 +139,7 @@ section            { padding: 100px 0; }
   border: 1px solid #BFE9D2; border-left: 4px solid var(--wa1);
   border-radius: 8px; padding: 32px; margin-top: 34px;
 }
-.wa-card h4 { font-size: 19px; margin-bottom: 8px; }
+.wa-card h4, .wa-card h3 { font-size: 19px; margin-bottom: 8px; }
 .wa-card p  { font-size: 15px; color: var(--text); margin-bottom: 22px; }
 
 /* ---------- 4. TOPBAR E HEADER ---------- */
@@ -227,13 +227,13 @@ header {
 .eq             { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
 .eq > div       { background: #fff; padding: 34px 30px; }
 .eq .num        { font-size: 12px; font-weight: 800; color: var(--primary); letter-spacing: .15em; }
-.eq h4          { font-size: 17.5px; margin: 12px 0 8px; }
+.eq h4, .eq h3   { font-size: 17.5px; margin: 12px 0 8px; }
 .eq p           { font-size: 14.5px; color: var(--muted); }
 
 .steps          { display: grid; grid-template-columns: repeat(auto-fit,minmax(230px,1fr)); gap: 30px; }
 .step           { padding-top: 26px; border-top: 3px solid var(--primary); }
 .step b         { font-size: 12px; letter-spacing: .16em; color: var(--muted); font-weight: 800; }
-.step h4        { font-size: 18px; margin: 10px 0 8px; }
+.step h4, .step h3 { font-size: 18px; margin: 10px 0 8px; }
 .step p         { font-size: 14.5px; color: var(--muted); }
 
 .reviews        { display: grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap: 28px; }
@@ -291,7 +291,7 @@ header {
 /* ---------- 9. RODAPE ---------- */
 footer.site     { background: var(--dark); color: #A9BDD6; padding: 76px 0 0; font-size: 15px; }
 .f-grid         { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 44px; }
-footer.site h4  { color: #fff; font-size: 15px; margin-bottom: 20px; }
+footer.site h4, footer.site h3 { color: #fff; font-size: 15px; margin-bottom: 20px; }
 footer.site ul  { list-style: none; }
 footer.site li  { margin-bottom: 10px; }
 footer.site a:hover { color: var(--primary); }

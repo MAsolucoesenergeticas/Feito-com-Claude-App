@@ -62,6 +62,22 @@ def wa_btn(slug, content, label, extra="", icon=True):
             f'href="{wa_href(slug, content)}" target="_blank" rel="noopener noreferrer">{html.escape(label)}</a>')
 
 
+def dims(arq):
+    """Largura e altura de um WebP, lidas do cabecalho (sem Pillow)."""
+    d = Path(arq).read_bytes()[:30]
+    if d[12:16] == b"VP8X":
+        return 1 + int.from_bytes(d[24:27], "little"), 1 + int.from_bytes(d[27:30], "little")
+    if d[12:16] == b"VP8L":
+        v = int.from_bytes(d[21:25], "little")
+        return 1 + (v & 0x3FFF), 1 + ((v >> 14) & 0x3FFF)
+    return int.from_bytes(d[26:28], "little") & 0x3FFF, int.from_bytes(d[28:30], "little") & 0x3FFF
+
+
+def wh(nome, t):
+    w, h = dims(ROOT / "img" / "obras" / f"{nome}-{t}.webp")
+    return f'width="{w}" height="{h}" '
+
+
 def imagem(nome, alt):
     tam = sorted(int(m.group(1)) for f in (ROOT / "img" / "obras").glob(f"{nome}-*.webp")
                  if (m := re.search(r"-(\d+)\.webp$", f.name)))
@@ -70,7 +86,7 @@ def imagem(nome, alt):
     srcset = ", ".join(f"/img/obras/{nome}-{t}.webp {t}w" for t in tam)
     maior = tam[-1]
     return (f'<figure class="post-fig"><img src="/img/obras/{nome}-{maior}.webp" srcset="{srcset}" '
-            f'sizes="(max-width:920px) 100vw, 872px" alt="{html.escape(alt)}" loading="lazy" decoding="async"></figure>')
+            f'sizes="(max-width:920px) 100vw, 872px" {wh(nome, maior)}alt="{html.escape(alt)}" loading="lazy" decoding="async"></figure>')
 
 
 def hero_img(nome, alt):
@@ -80,7 +96,7 @@ def hero_img(nome, alt):
         raise SystemExit(f"imagem nao encontrada: {nome}")
     srcset = ", ".join(f"/img/obras/{nome}-{t}.webp {t}w" for t in tam)
     return (f'<img src="/img/obras/{nome}-{tam[-1]}.webp" srcset="{srcset}" sizes="(max-width:1240px) 100vw, 1240px" '
-            f'alt="{html.escape(alt)}" fetchpriority="high" decoding="async">'), f"/img/obras/{nome}-{tam[-1]}.webp"
+            f'{wh(nome, tam[-1])}alt="{html.escape(alt)}" fetchpriority="high" decoding="async">'), f"/img/obras/{nome}-{tam[-1]}.webp"
 
 
 CIDADES = {
@@ -291,10 +307,18 @@ def ld(obj):
     return '<script type="application/ld+json">\n' + json.dumps(obj, ensure_ascii=False, indent=2) + "\n</script>"
 
 
+def titulo_seo(t):
+    """Titulo da aba com a marca, sem passar de 60 caracteres quando der."""
+    for marca in (" | M&A Soluções Energéticas", " | M&A Energia Solar", " | M&A"):
+        if len(t + marca) <= 60:
+            return t + marca
+    return t
+
+
 def pagina(slug, titulo, desc, canon, og_img, ld_blocos, miolo):
     return (head(titulo, desc, canon, og_img, "\n".join(ld_blocos)) +
             f'\n<body data-ctx="geral" data-cidade="Cascavel">{GTM_BODY}\n\n{parte("svg.html", slug)}\n\n'
-            f'{parte("topbar.html", slug)}\n\n{header(slug)}\n\n{miolo}\n\n'
+            f'{parte("topbar.html", slug)}\n\n{header(slug)}\n<main id="conteudo">\n{miolo}\n</main>\n\n'
             f'{parte("footer.html", slug)}\n\n{parte("magnum.html", slug)}\n\n'
             '<script src="/main.js" defer></script>\n</body>\n</html>\n')
 
@@ -386,7 +410,7 @@ def main():
         blocos = [preload_hero(p["hero"]), ld(artigo), ld({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": trilha})]
         (OUT / slug).mkdir()
         (OUT / slug / "index.html").write_text(
-            pagina(slug, p["title"] + " | M&A Soluções Energéticas", p["desc"], canon, SITE + og, blocos, miolo),
+            pagina(slug, p.get("seo_title") or titulo_seo(p["title"]), p["desc"], canon, SITE + og, blocos, miolo),
             encoding="utf-8")
 
     if pub:
@@ -398,7 +422,7 @@ def main():
 </div></section>
 <section class="blog-list"><div class="container"><div class="cards">{cards}</div></div></section>'''
         (OUT / "index.html").write_text(
-            pagina("blog", "Blog de energia solar no Oeste do Paraná | M&A Soluções Energéticas",
+            pagina("blog", "Blog de energia solar no Oeste do Paraná | M&A",
                    "Guias sobre preço, financiamento, Lei 14.300 e instalação de energia solar para casa, empresa e campo.",
                    SITE + "/blog/", SITE + "/assets/img/og-home.jpg",
                    [ld({"@context": "https://schema.org", "@type": "Blog", "name": "Blog M&A Soluções Energéticas",
